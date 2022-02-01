@@ -1,13 +1,19 @@
 /* || GENERAL STYLES */
 :root {
-    --primary-color: 
-    --secondary-color:
-    --accent-color:
+    --primary-color: #60838d;
+    --secondary-color:#e4e7e8;
+    --accent-color: #214359;
+    --dark-color: #364c56;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
 }
 
 body {
-    box-sizing: border-box;
-    font-size: 62.5%;
+    font-size: 2.5rem;
+    overflow-x: hidden;
 }
 
 *, 
@@ -22,10 +28,26 @@ body {
 a {
     text-decoration: none;
     display: inline-block;
-    color: #000;
+    color: inherit;
 }
 
 li {
     list-style: none;
     display: inline-block;
+}
+
+.btn {
+    padding: 15px 60px;
+    border-radius: 40px;
+    color: var(--secondary-color);
+    font-size: 1.8rem;
+    font-style: none;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+}
+
+.btn-dark {
+    background-color: var(--dark-color);
 }
