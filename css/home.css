@@ -22,6 +22,7 @@
 }
 
 .main-nav {
+    padding: 2.5rem 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -37,23 +38,28 @@
 }
 
 .main-nav-link {
-    font-size: 1.8rem;
+    font-size: var(--fs-200);
+}
+
+.vertical-line {
+    font-weight: 100;
 }
 
 .search-bar {
     background-color: transparent;
     border: 2px solid var(--secondary-color);
-    padding: 10px 15px;
     border-radius: 5px;
-    height: 4rem;
+    height: 4.5rem;
+    width: 20rem;
+    padding: 0 1.5rem;
     outline: none;
     color: var(--secondary-color);
-    font-size: 2rem;
+    font-size: var(--fs-200);
 }
 
 .search-bar::placeholder {
     color: var(--secondary-color);
-    font-size: 2rem;
+    font-size: var(--fs-200);
 }
 
 .hero-content {
@@ -62,6 +68,7 @@
 }
 
 .hero-title {
+    letter-spacing: 0.3rem;
     display: flex;
     flex-direction: column;
     gap: 1.25rem;
@@ -81,6 +88,7 @@
 
 .hero-description {
     width: 55%;
-    line-height: 3.25rem;
-    margin: 4rem 0;
+    line-height: 3.5rem;
+    margin: 5rem 0;
+    font-size: var(--fs-300);
 }

@@ -4,6 +4,10 @@
     --secondary-color:#e4e7e8;
     --accent-color: #214359;
     --dark-color: #364c56;
+    /* --fs-100: cards text, footer, searchbar,  */
+    --fs-200: 1.8rem;
+    --fs-300: 2.3rem; /* labels of the data */
+    /* --fs-400: titles of sections */
 }
 
 html {
@@ -12,7 +16,7 @@ html {
 }
 
 body {
-    font-size: 2.5rem;
+    font-size: var(--fs-300);
     overflow-x: hidden;
 }
 
@@ -36,11 +40,15 @@ li {
     display: inline-block;
 }
 
+.selected {
+    font-weight: bold;
+}
+
 .btn {
-    padding: 15px 60px;
+    padding: 1.5rem 5.5rem;
     border-radius: 40px;
     color: var(--secondary-color);
-    font-size: 1.8rem;
+    font-size: var(--fs-300);
     font-style: none;
 }
 
