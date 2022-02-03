@@ -5,10 +5,9 @@
     --accent-color: #214359;
     --dark-color: #364c56;
     --body-text-color: #7c7b7b;
-    /* --fs-100: cards text, footer, searchbar,  */
+    --body-bg-color: #fcfcfc;
     --fs-200: 1.8rem;
-    --fs-300: 2.3rem; /* labels of the data */
-    /* --fs-400: titles of sections */
+    --fs-300: 2.3rem; 
     --fs-500: 3.5rem;
     --fs-2xl: 9rem;
 }
@@ -22,6 +21,7 @@ body {
     font-size: var(--fs-300);
     overflow-x: hidden;
     color: var(--body-text-color);
+    background-color: var(--body-bg-color);
 }
 
 *, 
