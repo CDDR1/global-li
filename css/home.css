@@ -92,3 +92,56 @@
     margin: 5rem 0;
     font-size: var(--fs-300);
 }
+
+/* || MISSION SECTION */
+.mission-section {
+    padding: 8rem 0;
+}
+
+.mission-split {
+    display: flex;
+    gap: 5rem;
+}
+
+.mission-right-content {
+    width: 70%;
+} 
+
+.mission-title {
+    line-height: 5rem;
+}
+
+.mission-description {
+    margin: 4rem 0;
+    line-height: 3rem;
+}
+
+.mission-btn {
+    font-size: var(--fs-200);
+}
+
+/* || ENGAGEMENT DATA SECTION */
+.data-title {
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.data-container {
+    background-color: #e7eced;
+    color: var(--accent-color);
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.data-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 700;
+}
+
+.data-number {
+    font-size: var(--fs-2xl);
+}
+
