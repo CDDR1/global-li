@@ -21,16 +21,33 @@
     z-index: -1;
 }
 
+/* HEADER */
+header {
+    z-index: 2;
+    color: var(--secondary-color);
+    padding: 2.5rem 13%;    
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: all 0.1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.header-logo {
+    width: 25rem;
+}
+
+/* || MAIN NAV */
 .main-nav {
-    padding: 2.5rem 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.main-nav-logo {
-    width: 25rem;
-}
 
 .main-nav-links {
     display: flex;
@@ -40,6 +57,8 @@
 .main-nav-link {
     font-size: var(--fs-200);
 }
+
+/* || END OF MAIN NAV */
 
 .vertical-line {
     font-weight: 100;
@@ -166,7 +185,8 @@
 
 .card {
     color: var(--secondary-color);
-    background-color: #6c97a2;
+    background-color: #60838d;
+    background: linear-gradient(#60838d, #789fa8);
     font-size: var(--fs-200);
     border-radius: 10px;
 }
