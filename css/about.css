@@ -102,3 +102,146 @@ header {
     font-weight: 500;
     font-size: var(--fs-700);
 }
+
+/* || MAIN SECTION */
+main {
+    padding: 8rem 27rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10rem;
+    row-gap: 8rem;
+}
+
+.grid-row-gap {
+    grid-column: 1 / 3;
+}
+
+.grid-item-text {
+    margin-top: 2.5rem;
+    line-height: 2.5rem;
+}
+
+.grid-item-2 .grid-item-text {
+    margin-top: 5.5rem;
+}
+
+.grid-item-list {
+    margin-top: 1.5rem;
+}
+
+.grid-item-list-item {
+    display: block;
+    list-style: disc inside;
+    font-size: var(--fs-300);
+    font-weight: 600;
+    position: relative;
+    margin-left: 2.5rem;
+}
+
+.grid-item-list-item::before {
+    content: '';
+    border: 0.5rem solid #60838d;
+    border-radius: 100%;
+    height: 0; 
+    width: 0;
+    margin-top: 0.7rem;
+    margin-left: -2rem;
+    position: absolute;
+}
+
+.grid-item-flex-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 3.5rem;
+}
+
+.team-member-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.team-member-name {
+    color: var(--accent-color);
+    font-size: var(--fs-300);
+}
+
+.team-member-role {
+    color: #b8b8b8;
+    font-weight: 300;
+}
+
+.team-member-description {
+    line-height: 2.5rem;
+}
+
+/* || FOOTER */
+footer {
+    font-size: var(--fs-200);
+    padding: 5rem 20rem 0 20rem;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+footer h4 {
+    color: var(--accent-color);
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.copyright {
+    font-size: var(--fs-300);
+    color: #e0e0e0;
+}
+
+.footer-logo {
+    max-width: 70%;
+}
+
+.footer-center-content {
+    max-width: 80%;
+}
+
+.footer-nav-links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-nav-link {
+    color: var(--accent-color);
+}
+
+.gbl-container {
+    margin: 5rem 0;
+}
+
+.gbl-description {
+    line-height: 3rem;
+    margin-top: 1rem;
+}
+
+.footer-right {
+    flex-shrink: 0;
+}
+
+.footer-right-content {
+    margin-bottom: 65%;
+}
+
+.footer-email {
+    display: block;
+    margin-top: 1.25rem;
+}
+
+.gbl-description,
+.footer-email {
+    color: #b6b6b6;
+}
