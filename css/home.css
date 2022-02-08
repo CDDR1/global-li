@@ -185,7 +185,7 @@ header {
 
 .card {
     color: var(--secondary-color);
-    background: radial-gradient(#4a707c, #5b7c86);
+    background: radial-gradient(var(--primary-color), #5b7c86);
     font-size: var(--fs-200);
     border-radius: 10px;
     position: relative;
