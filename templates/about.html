@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- General Styles -->
-    <link rel="stylesheet" href="../css/general-styles.css">
+    <link rel="stylesheet" href="../static/css/general-styles.css">
     <!-- About Us Styles -->
-    <link rel="stylesheet" href="../css/about.css">
+    <link rel="stylesheet" href="../static/css/about.css">
     <title>Global LI | Home</title>
 </head>
 <body>
@@ -17,23 +17,8 @@
         <section class="hero-section">
 
             <!-- HEADER -->
-            <header>
-                <div class="logo-container">
-                    <img src="../img/global-li-logo.png" alt="Global LI logo" class="header-logo">
-                </div> 
-                <span class="vertical-line">|</span>
-                <nav class="main-nav">
-                    <ul class="main-nav-links">
-                        <li><a href="../index.html" class="main-nav-link">HOME</a></li>
-                        <li><a href="./about.html" class="main-nav-link selected">ABOUT US</a></li>
-                        <li><a href="" class="main-nav-link">FOREIGN DIRECT INVESTMENTS</a></li>
-                        <li><a href="" class="main-nav-link">EXPORTS</a></li>
-                        <li><a href="" class="main-nav-link">CONTACT US</a></li>
-                    </ul>
-                </nav>
-                <input type="search" class="search-bar" placeholder="Search...">
-            </header>
-
+            {% include './header.html' %}
+            
             <div class="hero-content">
                 <h1 class="hero-title">About Us</h1>           
             </div>
@@ -73,7 +58,7 @@
                 </div>
                 <div class="grid-item-6">
                     <div class="grid-item-flex-container">
-                        <div class="grid-item-img-container"><img src="../img/team-member.png" alt="" class="grid-item-img"></div>
+                        <div class="grid-item-img-container"><img src="../static/img/team-member.png" alt="" class="grid-item-img"></div>
                         <div class="team-member-info">
                             <h3 class="team-member-name">Dr. J. Betty Feng</h3>
                             <h4 class="team-member-role">ASSISTANT PROFESSOR</h4>
@@ -83,7 +68,7 @@
                 </div>
                 <div class="grid-item-7">
                     <div class="grid-item-flex-container">
-                        <div class="grid-item-img-container"><img src="../img/team-member.png" alt="" class="grid-item-img"></div>
+                        <div class="grid-item-img-container"><img src="../static/img/team-member.png" alt="" class="grid-item-img"></div>
                         <div class="team-member-info">
                             <h3 class="team-member-name">Carol Sung</h3>
                             <h4 class="team-member-role">ASSISTANT PROFESSOR</h4>
@@ -93,7 +78,7 @@
                 </div>
                 <div class="grid-item-8">
                     <div class="grid-item-flex-container">
-                        <div class="grid-item-img-container"><img src="../img/team-member.png" alt="" class="grid-item-img"></div>
+                        <div class="grid-item-img-container"><img src="../static/img/team-member.png" alt="" class="grid-item-img"></div>
                         <div class="team-member-info">
                             <h3 class="team-member-name">Carlos Duque Rivera</h3>
                             <h4 class="team-member-role">ASSISTANT PROFESSOR</h4>
@@ -103,41 +88,10 @@
                 </div>
             </div>
         </main>
+
+        <!-- FOOTER -->
+        {% include './footer.html' %}
+        
     </div>
-
-    <!-- FOOTER -->
-    <footer>
-        <div class="footer-left">
-            <img src="../img/global-li-logo-2.png" alt="" class="footer-logo">
-            <span class="copyright">&#169; 2022</span>
-        </div>
-        <div class="footer-center">
-            <div class="footer-center-content">
-                <nav class="footer-nav">
-                    <ul class="footer-nav-links">
-                        <li ><a href="" class="footer-nav-link">Home</a></li>
-                        <li ><a href="" class="footer-nav-link">About Us</a></li>
-                        <li ><a href="" class="footer-nav-link">Foreign Direct Investments</a></li>
-                        <li ><a href="" class="footer-nav-link">Exports</a></li>
-                        <li ><a href="" class="footer-nav-link">Contact Us</a></li>
-                    </ul>
-                </nav>
-                <!-- gbl stands for Global Long Island -->
-                <div class="gbl-container">
-                    <h4 class="gbl-title">Global Long Island</h4>
-                    <p class="gbl-description">Global LI works to evaluate the global competitiviness and international engagementof Long Island and to determine the region's international engagement readiness, capability, and commitment.</p>
-                </div>
-            </div>
-        </div>
-        <div class="footer-right">
-            <div class="footer-right-content">
-                <h4>Contact Us</h4>
-                <span class="footer-email">Email fengj@farmingdale.edu</span>
-            </div>
-        </div>
-    </footer>
-
-    <!-- JavaScript -->
-    <script src="../js/navbar.js"></script>
 </body>
 </html>

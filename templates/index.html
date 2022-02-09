@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- General Styles -->
-    <link rel="stylesheet" href="./css/general-styles.css">
+    <link rel="stylesheet" href="../static/css/general-styles.css">
     <!-- Homepage Styles -->
-    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="../static/css/home.css">
     <title>Global LI | Home</title>
 </head>
 <body>
@@ -17,22 +17,7 @@
         <section class="hero-section">
 
             <!-- HEADER -->
-            <header>
-                <div class="logo-container">
-                    <img src="./img/global-li-logo.png" alt="Global LI logo" class="header-logo">
-                </div> 
-                <span class="vertical-line">|</span>
-                <nav class="main-nav">
-                    <ul class="main-nav-links">
-                        <li><a href="./index.html" class="main-nav-link selected">HOME</a></li>
-                        <li><a href="./views/about.html" class="main-nav-link">ABOUT US</a></li>
-                        <li><a href="" class="main-nav-link">FOREIGN DIRECT INVESTMENTS</a></li>
-                        <li><a href="" class="main-nav-link">EXPORTS</a></li>
-                        <li><a href="" class="main-nav-link">CONTACT US</a></li>
-                    </ul>
-                </nav>
-                <input type="search" class="search-bar" placeholder="Search...">
-            </header>
+            {% include './header.html' %}
 
             <div class="hero-content">
                 <h1 class="hero-title">
@@ -52,7 +37,7 @@
             <section class="mission-section">
                 <div class="mission-split">
                     <div class="mission-left">
-                        <img src="./img/long-island.png" alt="" class="mission-img">
+                        <img src="../static/img/long-island.png" alt="" class="mission-img">
                     </div>
                     <div class="mission-right">
                         <div class="mission-right-content">
@@ -121,39 +106,8 @@
         </main>
 
         <!-- FOOTER -->
-        <footer>
-            <div class="footer-left">
-                <img src="./img/global-li-logo-2.png" alt="" class="footer-logo">
-                <span class="copyright">&#169; 2022</span>
-            </div>
-            <div class="footer-center">
-                <div class="footer-center-content">
-                    <nav class="footer-nav">
-                        <ul class="footer-nav-links">
-                            <li ><a href="" class="footer-nav-link">Home</a></li>
-                            <li ><a href="" class="footer-nav-link">About Us</a></li>
-                            <li ><a href="" class="footer-nav-link">Foreign Direct Investments</a></li>
-                            <li ><a href="" class="footer-nav-link">Exports</a></li>
-                            <li ><a href="" class="footer-nav-link">Contact Us</a></li>
-                        </ul>
-                    </nav>
-                    <!-- gbl stands for Global Long Island -->
-                    <div class="gbl-container">
-                        <h4 class="gbl-title">Global Long Island</h4>
-                        <p class="gbl-description">Global LI works to evaluate the global competitiviness and international engagementof Long Island and to determine the region's international engagement readiness, capability, and commitment.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-right">
-                <div class="footer-right-content">
-                    <h4>Contact Us</h4>
-                    <span class="footer-email">Email fengj@farmingdale.edu</span>
-                </div>
-            </div>
-        </footer>
+        {% include './footer.html' %}
+        
     </div>
-
-    <!-- JavaScript -->
-    <script src="./js/navbar.js"></script>
 </body>
 </html>

@@ -1,0 +1,57 @@
+/* || HEADER */
+header {
+    z-index: 2;
+    color: var(--secondary-color);
+    padding: 2.5rem 13%;    
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: all 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.header-logo {
+    width: 25rem;
+}
+
+/* || MAIN NAV */
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-nav-links {
+    display: flex;
+    gap: 5rem;
+}
+
+.main-nav-link {
+    font-size: var(--fs-200);
+}
+/* || END OF MAIN NAV */
+
+.vertical-line {
+    font-weight: 100;
+}
+
+.search-bar {
+    background-color: transparent;
+    border: 2px solid var(--secondary-color);
+    border-radius: 5px;
+    height: 4.5rem;
+    width: 20rem;
+    padding: 0 1.5rem;
+    outline: none;
+    color: var(--secondary-color);
+    font-size: var(--fs-200);
+}
+
+.search-bar::placeholder {
+    color: var(--secondary-color);
+    font-size: var(--fs-200);
+}
