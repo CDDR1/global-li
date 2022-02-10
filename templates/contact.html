@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- General Styles -->
+    <link rel="stylesheet" href="../static/css/general-styles.css">
+    <!-- Contact Us Styles -->
+    <link rel="stylesheet" href="../static/css/contact.css">
+    <title>Global LI | Contact Us</title>
+</head>
+<body>
+    <div class="container">
+        
+        <!-- HERO IMAGE SECTION -->
+        {% include './hero-img.html' %}
+
+        <!-- MAIN SECTION -->
+        <main>
+            <div class="grid">
+                <div class="left-section">
+                    <div class="left-content">
+                        <h2 class="left-title">Reach Out to Us</h2>
+                        <p class="left-description">We apprecciate your feedback and question to support this inititative and to enhance the internationalization of Long Island.</p>
+                    </div>
+                    <form action="" class="left-section-form">
+                        <div class="form-section">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-input" id="name" name="name" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-section">
+                            <label for="email">E-mail</label>
+                            <input type="email" class="form-input" id="email" name="email" placeholder="error@mail.com" required>
+                        </div>
+                        <div class="form-section">
+                            <label for="message"></label>
+                            <textarea name="message" class="form-textarea" id="message" cols="30" rows="6" placeholder="Type something..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary form-btn">Submit</button>
+                    </form>
+                </div>
+                <div class="right-content">
+                    <div class="email-info">
+                        <h3 class="name">Dr. J. Betty Feng</h3>
+                        <span class="email">Email fngj@farmingdale.edu</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- FOOTER -->
+        {% include './footer.html' %}
+        
+    </div>
+</body>
+</html>

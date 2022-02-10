@@ -49,6 +49,22 @@ li {
     display: inline-block;
 }
 
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: inherit;
+}
+
+textarea {
+  overflow: auto;
+}
+
 .selected {
     font-weight: bold;
 }
@@ -57,7 +73,7 @@ li {
     padding: 1.5rem 4rem;
     border-radius: 40px;
     color: var(--secondary-color);
-    font-size: var(--fs-300);
+    font-size: var(--fs-200);
     font-style: none;
 }
 
