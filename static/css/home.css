@@ -28,6 +28,8 @@
 .hero-content {
     position: absolute;
     top: 27%;
+    animation-duration: 3s;
+    animation-name: fadein;
 }
 
 .hero-title {
@@ -185,3 +187,14 @@
 
 /* || FOOTER */
 /* Footer styles can be found in the footer.css file */
+
+/* || ANIMATIONS */
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
