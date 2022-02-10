@@ -22,4 +22,4 @@ def exports():
 def contact():
     return render_template('contact.html', title='Contact Us')
 
-# export FLASK_DEBUG=0 to deactivate debug mode
+# export FLASK_DEBUG=1 to activate debug mode
