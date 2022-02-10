@@ -9,11 +9,11 @@
     <span class="vertical-line">|</span>
     <nav class="main-nav">
         <ul class="main-nav-links">
-            <li><a href="./" class="main-nav-link {{ 'selected' if True }}">HOME</a></li>
-            <li><a href="./about" class="main-nav-link">ABOUT US</a></li>
-            <li><a href="./foreign-direct-investments" class="main-nav-link">FOREIGN DIRECT INVESTMENTS</a></li>
-            <li><a href="./exports" class="main-nav-link">EXPORTS</a></li>
-            <li><a href="./contact" class="main-nav-link">CONTACT US</a></li>
+            <li><a href="./" class="main-nav-link {{ 'selected' if title == 'Home' }}">HOME</a></li>
+            <li><a href="./about" class="main-nav-link {{ 'selected' if title == 'About Us' }}">ABOUT US</a></li>
+            <li><a href="./foreign-direct-investments" class="main-nav-link {{ 'selected' if title == 'Foreign Direct Investments' }}">FOREIGN DIRECT INVESTMENTS</a></li>
+            <li><a href="./exports" class="main-nav-link {{ 'selected' if title == 'Exports' }}">EXPORTS</a></li>
+            <li><a href="./contact" class="main-nav-link {{ 'selected' if title == 'Contact Us' }}">CONTACT US</a></li>
         </ul>
     </nav>
     <input type="search" class="search-bar" placeholder="Search...">
