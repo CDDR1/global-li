@@ -12,11 +12,11 @@ def about():
 
 @app.route('/foreign-direct-investments')
 def investments():
-    return render_template('', title='Foreign Direct Investments')
+    return render_template('foreign-direct-investments.html', title='Foreign Direct Investments')
 
 @app.route('/exports')
 def exports():
-    return render_template('', title='Exports')
+    return render_template('exports.html', title='Exports')
 
 @app.route('/contact')
 def contact():
