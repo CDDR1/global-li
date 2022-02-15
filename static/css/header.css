@@ -55,3 +55,22 @@ header {
     color: var(--secondary-color);
     font-size: var(--fs-200);
 }
+
+
+/* || Responsive */
+@media (max-width: 1366px) {
+    header {
+        padding: 2.5rem;
+        padding: 2rem;
+    }
+
+    .header-logo {
+        width: 15rem;
+    }
+
+    .search-bar {
+        width: 12rem;
+        height: 3rem;
+        padding: 0 1rem;
+    }
+}

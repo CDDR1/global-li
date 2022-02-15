@@ -68,6 +68,10 @@
     gap: 5rem;
 }
 
+.mission-split > * {
+    width: 50%;
+}
+
 .mission-right-content {
     width: 70%;
 } 
@@ -89,6 +93,7 @@
 .data-title {
     text-align: center;
     padding: 4rem 0;
+    letter-spacing: 0.1rem;
 }
 
 .data-container {
@@ -110,15 +115,20 @@
     font-size: var(--fs-2xl);
 }
 
+.data-label {
+    font-size: var(--fs-300);
+}
+
 /* || CARDS SECTION */
 .cards-section {
     padding: 15rem 20rem 8rem 20rem;
+    padding: 0 25rem 5rem 25rem;
     display: flex;
     flex-direction: column;
-    gap: 17rem;
 }
 
 .small-cards-container {
+    margin: 15rem 0;
     display: flex;
     gap: 5.75rem;
 }
@@ -160,7 +170,7 @@
 }
 
 .card-lg {
-    padding: 4.5rem 5.5rem 8rem 5.5rem;
+    padding: 4.5rem 5.5rem 7rem 5.5rem;
 }
 
 .card-lg .card-description {
@@ -168,15 +178,23 @@
 }
 
 .card-title {
-    font-size: var(--fs-300);
-    font-size: 3.5rem;
-    font-weight: var(--fs-500);
+    font-size: var(--fs-500);
+    font-weight: 500;
+}
+
+.card-description {
+    line-height: 2.8rem;
+}
+
+.card-btn-container {
+    z-index: 1;
+    display: flex;
+    align-items: flex-start;
 }
 
 .card-btn {
     font-size: var(--fs-200);
     flex-shrink: 0;
-    z-index: 1;
 }
 
 .card-flex-container {
@@ -196,5 +214,87 @@
 
     to {
         opacity: 1;
+    }
+}
+
+/* || RESPONSIVE */
+@media (max-width: 1366px) {
+    /* || GENERAL STYLES */
+    /* :root {
+        --fs-200: 1.3rem; 
+        --fs-300: 1.8rem;
+        --fs-500: 2.5rem;
+        --fs-2xl: 5.5rem;
+    } */
+
+    .btn {
+        padding: 1rem 3rem;
+    }
+
+    /* || HERO IMG SECTION */
+    .hero-title {
+        font-size: 2.35rem;
+    }
+
+    .hero-description {
+        line-height: 2.6rem;
+        margin: 3.7rem 0;
+    }
+
+    /* || MISSION SECTION */
+    .mission-section {
+        padding: 6rem 0;
+    }
+
+    .mission-split {
+        gap: 3;
+    }
+
+    .mission-split > * {
+        width: 50%;
+    }
+
+    .mission-title {
+        line-height: 3rem;
+    }
+
+    .mission-description {
+        margin: 2rem 0;
+        line-height: 2.2rem;
+    }
+
+    /* || ENGAGEMENT DATA SECTION */
+    .data-title {
+        padding: 3rem 0;
+    }
+
+    .data-container {
+        padding: 1.5rem 0;
+    }
+
+    /* || CARDS SECTION */
+    .cards-section {
+        padding: 0 16rem 5rem 16rem;
+    }
+
+    .card-description {
+        line-height: 2rem;
+    }
+
+    .small-cards-container {
+        margin: 12rem 0;
+        gap: 5rem;
+    }
+
+    .card {
+        border-radius: 7px;
+    }
+
+    .card-sm {
+        padding: 2rem;
+    }
+
+    .card-lg {
+        padding: 3rem 2rem 4rem 2rem;
     }
 }

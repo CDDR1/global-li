@@ -65,3 +65,23 @@ footer h4 {
 .footer-email {
     color: #b6b6b6;
 }
+
+@media (max-width: 1366px) {
+    /* || FOOTER */
+
+    footer {
+        padding: 5rem 15rem 0 15rem;
+    }
+
+    .footer-center-content {
+        max-width: 90%;
+    }
+
+    .gbl-container {
+        margin: 3.5rem 0;
+    }
+
+    .gbl-description {
+        line-height: 2rem;
+    }
+}
