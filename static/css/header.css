@@ -60,12 +60,15 @@ header {
 /* || Responsive */
 @media (max-width: 1366px) {
     header {
-        padding: 2.5rem;
-        padding: 2rem;
+        padding: 1.5rem 13%;
     }
 
     .header-logo {
         width: 15rem;
+    }
+
+    .main-nav-links {
+        gap: 3.5rem;
     }
 
     .search-bar {
