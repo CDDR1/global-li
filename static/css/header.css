@@ -52,7 +52,7 @@ header {
 }
 
 .search-bar::placeholder {
-    color: var(--secondary-color);
+    color: var(--search-bar-placeholder-color);
     font-size: var(--fs-200);
 }
 
