@@ -2,7 +2,7 @@
 header {
     z-index: 2;
     color: var(--secondary-color);
-    padding: 2.5rem 13%;    
+    padding: 2.5rem;    
     width: 100%;
     position: fixed;
     top: 0;
@@ -58,9 +58,9 @@ header {
 
 
 /* || Responsive */
-@media (max-width: 1366px) {
+@media (max-width: 1700px) {
     header {
-        padding: 1.5rem 13%;
+        padding: 1.5rem;
     }
 
     .header-logo {
