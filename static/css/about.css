@@ -131,4 +131,9 @@ main {
     .grid-item-list-item {
         font-size: 1.5rem;
     }
+
+    .grid-item-list-item::before {
+        margin-top: 0.4rem;
+        border-width: 0.4rem;
+    }
 }
