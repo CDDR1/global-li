@@ -298,3 +298,36 @@
         font-size: 2.35rem;
     }
 }
+
+@media (max-width: 1140px) {
+    /* || HERO IMG SECTION */
+    .hero-content {
+        left: 95px;
+    }
+
+    /* || CARDS SECTION */
+    .cards-section {
+        padding: 0 10rem 5rem 10rem;
+    }
+
+    .card-btn {
+        padding: 1rem 1.75rem;
+        font-size: var(--fs-100);
+    }
+
+    .card-sm {
+        padding: 1.1rem;
+    }
+
+    .card-sm .card-flex-container {
+        gap: 1rem;
+    }
+
+    .card-description {
+        font-size: var(--fs-100);
+    }
+
+    .card-lg .card-description {
+        max-width: 40%;
+    }
+}
