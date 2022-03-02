@@ -84,3 +84,22 @@ footer h4 {
         line-height: 2rem;
     }
 }
+
+@media (max-width: 1030px) {
+    /* || FOOTER */
+    footer {
+        padding: 3rem 10rem 0 10rem; 
+    }
+
+    .footer-logo {
+        max-width: 55%;
+    }
+
+    .gbl-description {
+        line-height: 1.5rem;
+    }
+
+    .footer-email {
+        margin-top: 0.8rem;
+    }
+}

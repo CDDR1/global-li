@@ -77,3 +77,19 @@ header {
         padding: 0 1rem;
     }
 }
+
+@media (max-width: 1030px) {
+    .header-logo {
+        width: 13rem;
+    }
+
+    .main-nav-links {
+        gap: 2rem;
+    }
+
+    .search-bar {
+        width: 10rem;
+        height: 2.8rem;
+        padding: 0 0.8rem;
+    }
+}

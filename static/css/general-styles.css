@@ -102,6 +102,12 @@ textarea {
 }
 
 /* || RESPONSIVE */
+@media (max-width: 1700px) {
+    .btn {
+        padding: 1rem 3rem;
+    }
+}
+
 @media (max-width: 1366px) {
     :root {
         --fs-200: 1.3rem; 
@@ -109,5 +115,20 @@ textarea {
         --fs-500: 2.5rem;
         --fs-700: 3.5rem;
         --fs-2xl: 5.5rem;
+    }
+}
+
+@media (max-width: 1030px) {
+    .btn {
+        padding: 0.8rem 2.3rem;
+    }
+
+    :root {
+        --fs-100: 1rem;
+        --fs-200: 1.1rem;
+        --fs-300: 1.3rem;
+        --fs-500: 1.9rem;
+        --fs-700: 3rem;
+        --fs-2xl: 5rem;
     }
 }

@@ -220,11 +220,6 @@
 
 /* || RESPONSIVE */
 @media (max-width: 1700px) {
-    /* || GENERAL STYLES */
-    .btn {
-        padding: 1rem 3rem;
-    }
-
     /* || HERO IMG SECTION */
     .hero-title {
         font-size: 3rem;
@@ -310,11 +305,6 @@
         padding: 0 10rem 5rem 10rem;
     }
 
-    .card-btn {
-        padding: 1rem 1.75rem;
-        font-size: var(--fs-100);
-    }
-
     .card-sm {
         padding: 1.1rem;
     }
@@ -329,5 +319,55 @@
 
     .card-lg .card-description {
         max-width: 40%;
+    }
+}
+
+@media (max-width: 1030px) {
+    /* || HERO IMG SECTION */
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-description {
+        font-size: var(--fs-200); 
+        line-height: 1.8rem;
+        margin: 2.5rem 0;
+        max-width: 40%;
+    }
+
+    /* || MISSION SECTION */
+    .mission-section {
+        padding: 5rem 0;
+    }
+
+    .mission-title {
+        line-height: 2.5rem;
+    }
+
+    .mission-description {
+        line-height: 1.6rem;
+        margin: 1.5rem 0;
+    }
+
+    /* || CARDS SECTION */
+    .small-cards-container {
+        gap: 3.5rem;
+        margin: 10rem 0;
+    }
+
+    .card-sm {
+        padding: 1.3rem 2rem
+    }
+
+    .card-title {
+        font-size: var(--fs-500);
+    }
+
+    .card-flex-container {
+        margin-top: 0.7rem;
+    }
+
+    .card-description {
+        line-height: 1.5rem;
     }
 }
