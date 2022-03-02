@@ -289,8 +289,18 @@
 }
 
 @media (max-width: 1366px) {
+    /* || HERO IMG SECTION */
     .hero-title {
         font-size: 2.35rem;
+    }
+
+    /* || CARDS SECTION */
+    .card-flex-container {
+        margin-top: 0.8rem;
+    }
+
+    .card-description {
+        line-height: 1.8rem;
     }
 }
 
