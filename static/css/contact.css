@@ -97,7 +97,7 @@ main {
 
     .form-input,
     .form-textarea {
-        padding: 1.2rem 1.5rem;
+        padding: 1rem 1.3rem;
     }
 
     .email-info {
@@ -107,5 +107,23 @@ main {
 
     .form-btn {
         padding: 1rem 5rem;
+    }
+}
+
+@media (max-width: 1170px) {
+    main {
+        padding: 7rem 12rem;
+    }
+
+    .grid {
+        gap: 8rem;
+    }
+
+    .left-section-form > * {
+        margin: 3rem 0;
+    }
+
+    .form-btn {
+        margin: 0;
     }
 }
