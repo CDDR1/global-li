@@ -140,6 +140,10 @@ main {
     .email-info {
         margin-top: 3.75rem;
     }
+
+    .form-btn {
+        margin: 0;
+    }
 }
 
 @media (max-width: 768px) {
@@ -157,5 +161,28 @@ main {
 
     .form-textarea {
         height: 8rem;
+    }
+
+    .form-btn {
+        margin: 0;
+    }
+}
+
+@media (max-width: 640px) {
+    main {
+        padding: 4rem 6rem;
+    }
+
+    .left-section-form > * {
+        margin: 2rem 0;
+    }
+
+    .form-input {
+        padding: 0.6rem 1.3rem;
+    }
+
+    .form-btn {
+        margin: 0;
+        padding: 0.7rem 4rem;
     }
 }
