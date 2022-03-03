@@ -92,13 +92,6 @@ main {
 
 /* || Responsive */
 @media (max-width: 1590px) {
-    :root {
-        --fs-200: 1.3rem; 
-        --fs-300: 1.8rem;
-        --fs-500: 2.5rem;
-        --fs-2xl: 5.5rem;
-    }
-
     .grid-item-text {
         line-height: 2rem;
     }
@@ -135,5 +128,28 @@ main {
     .grid-item-list-item::before {
         margin-top: 0.4rem;
         border-width: 0.4rem;
+    }
+}
+
+@media (max-width: 1290px) {
+    /* || MAIN SECTION */
+    main {
+        padding: 6rem 9rem;
+    }
+
+    .grid-item-text {
+        line-height: 1.8rem;
+    }
+
+    .grid-item-list-item {
+        font-size: var(--fs-200);
+    }
+
+    .grid-item-flex-container {
+        gap: 2.2rem;
+    }
+
+    .team-member-description {
+        line-height: 1.7rem;
     }
 }
