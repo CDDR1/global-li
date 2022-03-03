@@ -54,7 +54,7 @@ main {
 }
 
 .form-textarea {
-    border-radius: 10px;
+    border-radius: 4px;
     border: 3px solid #e8edee;
     outline: none;
 }
@@ -153,5 +153,9 @@ main {
 
     .form-input {
         padding: 0.8rem 1.3rem;
+    }
+
+    .form-textarea {
+        height: 8rem;
     }
 }
