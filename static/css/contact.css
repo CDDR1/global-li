@@ -141,3 +141,17 @@ main {
         margin-top: 3.75rem;
     }
 }
+
+@media (max-width: 768px) {
+    .grid {
+        gap: 5rem;
+    }
+
+    .left-description {
+        line-height: 1.5rem;
+    }
+
+    .form-input {
+        padding: 0.8rem 1.3rem;
+    }
+}
