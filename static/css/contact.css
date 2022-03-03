@@ -127,3 +127,17 @@ main {
         margin: 0;
     }
 }
+
+@media (max-width: 900px) {
+    main {
+        padding: 5rem 8rem;
+    }
+
+    .form-btn {
+        padding: 0.8rem 4rem;
+    }
+
+    .email-info {
+        margin-top: 3.75rem;
+    }
+}
