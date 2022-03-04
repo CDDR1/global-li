@@ -78,7 +78,7 @@ header {
     }
 }
 
-@media (max-width: 1030px) {
+@media (max-width: 1070px) {
     .header-logo {
         width: 13rem;
     }
@@ -91,5 +91,25 @@ header {
         width: 10rem;
         height: 2.8rem;
         padding: 0 0.8rem;
+    }
+}
+
+@media (max-width: 940px) {
+    .header-logo {
+        width: 12rem;
+    }
+
+    .main-nav-link {
+        font-size: var(--fs-100);
+    }
+
+    .search-bar {
+        width: 9rem;
+        height: 2.4rem;
+        font-size: var(--fs-100);
+    }
+
+    .search-bar::placeholder {
+        font-size: var(--fs-100);
     }
 }
