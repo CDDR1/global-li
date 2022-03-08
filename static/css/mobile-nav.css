@@ -1,0 +1,46 @@
+/* || MOBILE NAV */
+.mobile-nav {
+    display: none;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mobile-logo {
+    width: 15rem;
+}
+
+.hamburger-menu {
+    width: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.hamburger-menu span {
+    display: block;
+    background-color: var(--secondary-color);
+    height: 0.7rem;
+    border-radius: 15px;
+}
+
+.line-1, 
+.line-3 {
+    width: 55%;
+}
+
+.line-2 {
+    width: 100%;
+}
+
+/* .mobile-nav.show {
+    display: block;
+} */
+
+/* || RESPONSIVE */
+@media (max-width: 980px) {
+    .mobile-nav {
+        display: flex;
+    }
+}
