@@ -28,6 +28,7 @@
 .hero-content {
     position: absolute;
     top: 27%;
+    left: 290px;
     animation-duration: 3s;
     animation-name: fadein;
 }
@@ -221,6 +222,10 @@
 /* || RESPONSIVE */
 @media (max-width: 1700px) {
     /* || HERO IMG SECTION */
+    .hero-content {
+        left: auto;
+    }
+
     .hero-title {
         font-size: 3rem;
     }
@@ -290,6 +295,10 @@
 
 @media (max-width: 1366px) {
     /* || HERO IMG SECTION */
+    .hero-content {
+        left: 200px;
+    }
+
     .hero-title {
         font-size: 2.35rem;
     }
@@ -334,6 +343,10 @@
 
 @media (max-width: 1030px) {
     /* || HERO IMG SECTION */
+    .hero-content {
+        left: 135px;
+    }
+
     .hero-title {
         font-size: 2rem;
     }
