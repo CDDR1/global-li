@@ -92,6 +92,10 @@
 }
 
 /* || ENGAGEMENT DATA SECTION */
+.data-bg-img {
+    display: none;
+}
+
 .data-title {
     text-align: center;
     padding: 4rem 0;
@@ -396,6 +400,7 @@
 }
 
 @media (max-width: 980px) {
+    /* || HERO SECTION */
     .hero-section {
         padding: 6rem 5rem;
     }
@@ -415,5 +420,75 @@
         line-height: 7rem;
         width: auto;
         margin: 8rem 0;
+    }
+
+    /* || MISSION SECTION */
+    .mission-section {
+        padding: 0;
+    }
+
+    .mission-split {
+        flex-direction: column;
+        gap: 10rem;
+    }
+
+    .mission-split > * {
+        width: 100%;
+    }
+
+    .mission-right {
+        display: flex;
+        justify-content: center;
+    }
+
+    .mission-right-content {
+        width: auto;
+        max-width: 85%;
+    }
+
+    .mission-title {
+        line-height: 5rem;
+    }
+
+    .mission-description {
+        line-height: 5rem;
+        margin: 7rem 0;
+    }
+
+    .mission-btn {
+        font-size: var(--fs-200);
+    }
+
+    /* || ENGAGEMENT DATA SECTION */
+    .engagement-data-section {
+        padding: 41rem 0 10rem 0;
+        position: relative;
+    }
+
+    .data-title {
+        margin-bottom: 6rem;
+    }
+
+    .data-container {
+        background-color: transparent;
+        flex-direction: column;
+        gap: 10rem;
+    }
+
+    .data-column {
+        gap: 2rem;
+    }
+
+    .data-bg-img {
+        display: block;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+    .mission-btn {
+        font-size: var(--fs-300);
     }
 }
