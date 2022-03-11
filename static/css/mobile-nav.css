@@ -1,9 +1,15 @@
 /* || MOBILE NAV */
 .mobile-nav {
     display: none;
+    padding: 6rem 5rem;
     width: 100%;
+    position: absolute;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+}
+
+.height-change {
+    height: 100%;
 }
 
 .mobile-logo {
@@ -50,7 +56,6 @@
     height: 100%;
     width: 88%;
     padding-top: 25rem;
-    transition: all 0.4s;
 }
 
 .collapsable-nav.active {

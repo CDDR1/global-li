@@ -27,6 +27,10 @@ body {
     background-color: var(--body-bg-color);
 }
 
+.container {
+    position: relative;
+}
+
 *, 
 *::before,
 *::after {
