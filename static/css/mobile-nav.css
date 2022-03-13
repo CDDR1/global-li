@@ -83,3 +83,23 @@
         display: flex;
     }
 }
+
+@media (max-width: 680px) {
+    .mobile-nav {
+        padding: 4.5rem 3.5rem;
+    }
+
+    .mobile-logo {
+        width: 13.5rem;
+    }
+
+    .hamburger-menu {
+        width: 8.5rem;
+        gap: 1.1rem;
+    }
+
+    .collapsable-nav-item {
+        font-size: var(--fs-200);
+        padding: 2rem 5rem;
+    }
+}

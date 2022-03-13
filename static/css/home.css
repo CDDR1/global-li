@@ -532,3 +532,43 @@
         padding: 3.5rem 11rem;
     }
 }
+
+@media (max-width: 680px) {
+    /* || HERO SECTION */
+    .hero-section {
+        padding: 4.5rem 3.5rem;
+    }
+
+    .hero-title {
+        font-size: var(--fs-200);
+    }
+
+    .hero-description {
+        max-width: 85%;
+        line-height: 5.5rem;
+        margin: 6rem 0;
+        font-size: var(--fs-200);
+    }
+
+    .hero-section .btn {
+        font-size: var(--fs-200);
+    }
+
+    /* || CARDS SECTION */
+    .small-cards-container {
+        gap: 10rem;
+    }
+
+    .card-sm {
+        padding: 8rem 4rem;
+    }
+
+    .card-title {
+        font-size: 4rem;
+    }
+
+    .card-sm .card-description {
+        max-width: 100%;
+        margin: 3rem 0;
+    }
+}
