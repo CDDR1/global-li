@@ -105,6 +105,10 @@
 }
 
 @media (max-width: 590px) {
+    .collapsable-nav {
+        padding-top: 17rem;
+    }
+
     .mobile-logo {
         width: 10rem;
     }
