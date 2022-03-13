@@ -103,3 +103,18 @@
         padding: 2rem 5rem;
     }
 }
+
+@media (max-width: 590px) {
+    .mobile-logo {
+        width: 10rem;
+    }
+
+    .hamburger-menu {
+        width: 7rem;
+        gap: 0.9rem;
+    }
+
+    .hamburger-menu span {
+        height: 0.5rem;
+    }
+}

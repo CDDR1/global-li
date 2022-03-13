@@ -534,7 +534,7 @@
 }
 
 @media (max-width: 680px) {
-    /* || HERO SECTION */
+    /* || HERO IMG SECTION */
     .hero-section {
         padding: 4.5rem 3.5rem;
     }
@@ -554,7 +554,16 @@
         font-size: var(--fs-200);
     }
 
+    /* || MISSION SECTION */
+    .mission-right {
+        padding: 0 3.5rem;
+    }
+
     /* || CARDS SECTION */
+    .cards-section {
+        padding: 0 3.5rem;
+    }
+
     .small-cards-container {
         gap: 10rem;
     }
@@ -564,11 +573,49 @@
     }
 
     .card-title {
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
 
     .card-sm .card-description {
         max-width: 100%;
         margin: 3rem 0;
+    }
+}
+
+@media (max-width: 590px) {
+    /* || HERO IMG SECTION */
+    .hero-content {
+        top: 17%;
+    }
+
+    .hero-description {
+        margin: 4rem 0;
+        line-height: 4rem;
+    }
+
+    /* || MISSION SECTION */
+    .mission-description {
+        margin: 5rem 0;
+        line-height: 4rem;
+    }
+
+    .mission-btn {
+        font-size: var(--fs-200);
+        padding: 2.5rem 7.5rem;
+    }
+
+    /* || DATA SECTION */
+    .engagement-data-section {
+        padding: 15rem 0 10rem 0;
+    }
+
+    .data-title {
+        margin-bottom: 2rem;
+    }
+
+    /* || CARDS SECTION */
+    .card-btn {
+        font-size: var(--fs-200);
+        padding: 2.5rem 7.5rem;
     }
 }
