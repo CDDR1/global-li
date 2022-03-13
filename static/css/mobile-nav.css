@@ -54,12 +54,14 @@
     right: -100%;
     top: 0;
     height: 100%;
-    width: 88%;
+    width: 0;
+    overflow: hidden;
     padding-top: 25rem;
 }
 
 .collapsable-nav.active {
     right: 0;
+    width: 88%;
 }
 
 .collapsable-nav-line {
