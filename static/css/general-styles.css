@@ -169,3 +169,55 @@ textarea {
         padding: 2.5rem 7.5rem;
     }
 }
+
+@media (max-width: 475px) {
+    :root {
+        --fs-100: 1.2rem;
+        --fs-200: 2rem;
+        --fs-300: 2.8rem;
+        --fs-500: 3rem;
+        --fs-700: 3.5rem;
+        --fs-2xl: 5rem;
+    }
+
+    .btn {
+        padding: 2rem 5.5rem;
+    }
+}
+
+@media (max-width: 475px) {
+    :root {
+        --fs-100: 0.9rem;
+        --fs-200: 1.7rem;
+        --fs-300: 2.5rem;
+        --fs-500: 2.7rem;
+        --fs-700: 3.2rem;
+        --fs-2xl: 4.5rem;
+    }
+}
+
+@media (max-width: 375px) {
+    :root {
+        --fs-100: 0.7rem;
+        --fs-200: 1.5rem;
+        --fs-300: 2.3rem;
+        --fs-500: 2.3rem;
+        --fs-700: 3rem;
+        --fs-2xl: 4rem;
+    }
+
+    .btn {
+        padding: 1.5rem 4.5rem;
+    }
+}
+
+@media (max-width: 275px) {
+    :root {
+        --fs-100: 0.4rem;
+        --fs-200: 1.1rem;
+        --fs-300: 1.8rem;
+        --fs-500: 2.3rem;
+        --fs-700: 2.6rem;
+        --fs-2xl: 3.6rem;
+    }
+}

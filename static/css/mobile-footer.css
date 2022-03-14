@@ -44,3 +44,46 @@
         font-size: var(--fs-200);
     }
 }
+
+@media (max-width: 560px) {
+    .mobile-footer {
+        padding: 5rem 2rem 3rem 2rem;
+        gap: 6rem;
+    }
+
+    .footer-description {
+        line-height: 3.5rem;
+    }
+
+    .footer-links {
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .mobile-footer {
+        gap: 3rem;
+    }
+
+    .footer-description {
+        line-height: 3rem;
+    }
+
+    .footer-links {
+        gap: 1.5rem;
+    }
+
+    .footer-line {
+        height: 0.2rem;
+    }
+}
+
+@media (max-width: 275px) {
+    .footer-description {
+        line-height: 2rem;
+    }
+
+    .footer-links {
+        gap: 1rem;
+    }
+}
