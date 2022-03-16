@@ -49,4 +49,8 @@
     .hero-section {
         padding: 6rem 5rem;
     }
+
+    .hero-section::after {
+        display: none;
+    }
 }

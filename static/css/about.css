@@ -153,3 +153,173 @@ main {
         line-height: 1.7rem;
     }
 }
+
+@media (max-width: 980px) {
+    /* || MAIN SECTION */
+    main {
+        padding: 11rem 5rem 7rem 5rem;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-row-gap {
+        display: none;
+    }
+
+    .grid-item-text {
+        line-height: 4.8rem;
+    }
+
+    .grid-item-list-item::before {
+        margin-top: 1rem;
+        border-width: 0.8rem;
+    }
+
+    .list-2 {
+        margin-top: 5rem;
+    }
+
+    .grid-item-img {
+        height: 100%;
+        object-fit: cover;
+        border-radius: 18px;
+    }
+
+    .team-member-description {
+        line-height: 4rem;
+        padding-bottom: 3rem;
+    }
+}
+
+@media (max-width: 760px) {
+    /* || MAIN SECTION */
+    .team-member-role {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 680px) {
+    /* || MAIN SECTION */
+    main {
+        padding: 9rem 3.5rem 6rem 3.5rem;
+    }
+
+    .grid-item-2 .grid-item-text {
+        margin: 0;
+    }
+}
+
+@media (max-width: 590px) {
+    /* || MAIN SECTION */
+    .grid {
+        row-gap: 0;
+        column-gap: 0;
+        gap: 6rem;
+    }
+
+    .grid-item-text {
+        line-height: 4.2rem;
+    }
+
+    .grid-item-list-item::before {
+        margin-top: 0.5rem;
+    }
+
+    .team-member-description {
+        line-height: 2.5rem;
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 560px) {
+    /* || MAIN SECTION */
+    main {
+        padding: 9rem 2rem 6rem 2rem;
+    }
+}
+
+@media (max-width: 475px) {
+    /* || MAIN SECTION */
+    main {
+        padding: 6rem 2rem;
+    }
+
+    .grid {
+        gap: 5rem;
+    }
+
+    .grid-item-text {
+        line-height: 3rem;
+    }
+
+    .grid-item-list-item::before {
+        margin-top: 0.4rem;
+        border-width: 0.5rem;
+    }
+
+    .team-member-description {
+        font-size: var(--fs-200);
+    }
+}
+
+@media (max-width: 420px) {
+    /* || MAIN SECTION */
+    .team-member-role {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 375px) {
+    /* || MAIN SECTION */
+    .grid-item-text {
+        line-height: 2.5rem;
+        margin-top: 1rem;
+    }
+
+    .list-2 {
+        margin-top: 4rem;
+    }
+
+    .team-member-role {
+        font-size: 1.5rem;
+    }
+
+    .team-member-description {
+        line-height: 2rem;
+    }
+}
+
+@media (max-width: 275px) {
+    /* || MAIN SECTION */
+    main {
+        padding: 4rem 1rem;
+    }
+
+    .grid {
+        gap: 3rem;
+    }
+
+    .grid-item-text {
+        line-height: 2rem;
+        margin-top: 1rem;
+    }
+
+    .grid-item-list-item::before {
+        margin-top: 0.2rem;
+        border-width: 0.4rem;
+    }
+
+    .list-2 {
+        margin-top: 3rem;
+    }
+
+    .team-member-role {
+        font-size: var(--fs-200);
+    }
+
+    .team-member-description {
+        line-height: 1.25rem;
+    }
+}
