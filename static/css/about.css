@@ -87,6 +87,10 @@ main {
     line-height: 2.5rem;
 }
 
+.portfolio-site-link:hover {
+    text-decoration: underline;
+}
+
 /* || FOOTER */
 /* Footer styles can be found in the footer.css file */
 
