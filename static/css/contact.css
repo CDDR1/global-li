@@ -12,7 +12,7 @@ main {
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 10rem;
+    column-gap: 15rem;
 } 
 
 .left-content {
@@ -26,12 +26,11 @@ main {
 }
 
 .left-section-form {
-    margin-top: 5rem;
     color: var(--accent-color);
 }
 
 .left-section-form > * {
-    margin: 4rem 0;
+    margin: 2rem 0;
 }
 
 .form-section {
@@ -115,10 +114,6 @@ main {
         padding: 7rem 12rem;
     }
 
-    .grid {
-        gap: 8rem;
-    }
-
     .left-section-form > * {
         margin: 3rem 0;
     }
@@ -128,49 +123,62 @@ main {
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 980px) {
+    /* || MAIN SECTION */
     main {
-        padding: 5rem 8rem;
+        padding: 10rem 5rem;
     }
 
-    .form-btn {
-        padding: 0.8rem 4rem;
-    }
-
-    .email-info {
-        margin-top: 3.75rem;
-    }
-
-    .form-btn {
-        margin: 0;
-    }
-}
-
-@media (max-width: 768px) {
     .grid {
+        grid-template-columns: 1fr;
         gap: 5rem;
-    }
+    } 
 
     .left-description {
-        line-height: 1.5rem;
+        line-height: 5rem;
+    }
+
+    .left-section-form {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
     }
 
     .form-input {
-        padding: 0.8rem 1.3rem;
-    }
-
-    .form-textarea {
-        height: 8rem;
+        padding: 2.5rem 3rem;
+        border-radius: 15px;
     }
 
     .form-btn {
-        margin: 0;
+        font-size: var(--fs-200);
+        padding: 3rem 14rem;
+        align-self: center;
     }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 680px) {
     main {
-        padding: 4rem 6rem;
+        padding: 10rem 3.5rem;
+    }
+
+    .form-btn {
+        padding: 2.5rem 11rem;
+    }
+}
+
+@media (max-width: 560px) {
+    main {
+        padding: 8rem 2rem;
+    }
+}
+
+@media (max-width: 475px) {
+    main {
+        padding: 6rem 2rem;
+    }
+
+    .left-description {
+        line-height: 3.5rem;
     }
 
     .left-section-form > * {
@@ -178,11 +186,37 @@ main {
     }
 
     .form-input {
-        padding: 0.6rem 1.3rem;
+        padding: 2rem 3rem;
     }
 
     .form-btn {
-        margin: 0;
-        padding: 0.7rem 4rem;
+        padding: 2.2rem 9rem;
+    }
+}
+
+@media (max-width: 275px) {
+    main {
+        padding: 4rem 1rem;
+    }
+
+    .grid {
+        gap: 0;
+    }
+
+    .left-description {
+        line-height: 2rem;
+    }
+
+    .left-section-form > * {
+        margin: 0.5rem 0;
+    }
+
+    .form-input {
+        padding: 1.3rem 1.5rem;
+        border-radius: 10px;
+    }
+
+    .form-btn {
+        padding: 1.2rem 5rem;
     }
 }
