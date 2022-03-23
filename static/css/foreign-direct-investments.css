@@ -1,16 +1,39 @@
-.dashboard-section {
-    height: 130rem;
-    cursor: pointer;
+/* || MAIN SECTION */
+main {
+    margin-top: 10rem;
+    padding: 17rem 28rem;
 }
 
-.dashboard-container {
-    height: 0;
-    overflow: hidden;
-    transition: height 1s ease-in-out;
+.page-title {
+    text-align: center;
 }
 
-.show-dashboard {
-    height: 100%;
-    width: 70rem;
-    overflow: auto;
+.dashboards-split {
+    margin: 14rem 0;
+    display: flex;
+    gap: 9rem;
+}
+
+.left-dashboard, 
+.right-dashboard,
+.center-dashboard {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.small-dashboard {
+    height: 32rem;
+    width: 100%;
+    /* background-color: grey; */
+}
+
+.tableauPlaceholder {
+    max-height: 100%;
+}
+
+.long-dashboard {
+    height: 70rem;
+    width: 100%;
+    /* background-color: grey; */
 }
