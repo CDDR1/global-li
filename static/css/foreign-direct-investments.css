@@ -6,12 +6,18 @@ main {
 
 .page-title {
     text-align: center;
+    color: var(--accent-color);
+    font-size: var(--fs-700);
 }
 
 .dashboards-split {
-    margin: 14rem 0;
+    margin: 15rem 0;
     display: flex;
     gap: 9rem;
+}
+
+.dashboard-container {
+    box-shadow: var(--dashboard-shadow);
 }
 
 .left-dashboard, 
@@ -23,13 +29,9 @@ main {
 }
 
 .small-dashboard {
-    height: 32rem;
+    height: 35rem;
     width: 100%;
     /* background-color: grey; */
-}
-
-.tableauPlaceholder {
-    max-height: 100%;
 }
 
 .long-dashboard {

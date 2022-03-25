@@ -7,6 +7,7 @@
     --body-text-color: #5f5f5f;
     --body-bg-color: #fcfcfc;
     --search-bar-placeholder-color: var(--secondary-color);
+    --dashboard-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     --fs-100: 1.2rem;
     --fs-200: 1.8rem;
     --fs-300: 2.3rem; 
