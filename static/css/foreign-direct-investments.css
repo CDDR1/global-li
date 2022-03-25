@@ -31,11 +31,9 @@ main {
 .small-dashboard {
     height: 35rem;
     width: 100%;
-    /* background-color: grey; */
 }
 
 .long-dashboard {
     height: 70rem;
     width: 100%;
-    /* background-color: grey; */
 }
