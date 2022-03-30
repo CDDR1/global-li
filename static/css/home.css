@@ -154,6 +154,7 @@
     width: 100%;
     color: #fff;
     background-color: rgba(96, 131, 141, 0.8);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
     height: 70rem;
     border-radius: 8px;
     position: relative;
@@ -263,12 +264,12 @@
     }
 
     .mission-title {
-        line-height: 3rem;
+        line-height: 4rem;
     }
 
     .mission-description {
         margin: 2rem 0;
-        line-height: 2.2rem;
+        line-height: 2.8rem;
     }
 
     /* || ENGAGEMENT DATA SECTION */
@@ -278,6 +279,7 @@
 
     .data-container {
         padding: 1.5rem 0;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
     }
 
     /* || CARDS SECTION */
