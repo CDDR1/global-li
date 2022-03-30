@@ -1,7 +1,7 @@
 /* || HEADER */
 header {
     z-index: 2;
-    color: var(--secondary-color);
+    color: var(--accent-color);
     padding: 2.4rem;    
     width: 100%;
     position: fixed;
@@ -31,10 +31,6 @@ header {
     width: 21rem;
 }
 
-.vertical-line {
-    font-weight: 100;
-}
-
 .main-nav-link {
     font-size: var(--fs-200);
 }
@@ -42,18 +38,18 @@ header {
 
 .search-bar {
     background-color: transparent;
-    border: 2px solid var(--secondary-color);
+    border: 1.75px solid var(--accent-color);
     border-radius: 5px;
     height: 4.5rem;
     width: 18rem;
     padding: 0 1.5rem;
     outline: none;
-    color: var(--secondary-color);
+    color: var(--accent-color);
     font-size: var(--fs-200);
 }
 
 .search-bar::placeholder {
-    color: var(--search-bar-placeholder-color);
+    color: var(--accent-color);
     font-size: var(--fs-200);
 }
 
