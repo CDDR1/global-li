@@ -2,6 +2,8 @@
 :root {
     --primary-color: #60838d;
     --secondary-color:#e4e7e8;
+    --tertiary-color: #eeebe4;
+    --tertiary-dark-color: #5d5a52;
     --accent-color: #214359;
     --dark-color: #364c56;
     --body-text-color: #5f5f5f;
@@ -38,6 +40,12 @@ body {
     padding: 0;
     margin: 0;
     font-family: sans-serif;
+}
+
+h1 {
+    color: var(--accent-color);
+    font-size: var(--fs-700);
+    font-weight: 600;
 }
 
 h2 {
