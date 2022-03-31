@@ -105,6 +105,7 @@
     height: 9rem;
     margin: 12rem 0;
     background-color: #eeebe4;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
     color: var(--accent-color);
     padding: 2rem 0;
     display: flex;
@@ -122,7 +123,7 @@
 .data-column {
     font-weight: 600;
     background-color: #87a0a7;
-    color: var(--secondary-color);
+    color: #fff;
     width: 30rem;
     height: 30rem;
     border-radius: 50%;
@@ -134,10 +135,12 @@
 
 .data-number {
     font-size: var(--fs-2xl);
+    font-weight: 500;
 }
 
 .data-label {
     font-size: var(--fs-300);
+    font-weight: 500;
     max-width: 20rem;
     text-align: center;
 }
@@ -277,14 +280,31 @@
         padding: 3rem 0;
     }
 
-    .data-container {
-        padding: 1.5rem 0;
-        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
-    }
-
     /* || CARDS SECTION */
     .cards-section {
         padding: 15rem 25rem;
+    }
+}
+
+@media (max-width: 1500px) {
+    /* || ENGAGEMENT DATA SECTION */
+    .data-container {
+        height: 7rem;
+    }
+
+    .data-column {
+        width: 25rem;
+        height: 25rem;
+    }
+
+    .data-label {
+        font-size: var(--fs-200);
+        max-width: 15rem;
+    }
+
+    /* || CARDS SECTION */
+    .card {
+        height: 55rem;
     }
 }
 
@@ -298,9 +318,40 @@
         font-size: 2.35rem;
     }
 
+    .hero-description {
+        margin: 2.75rem 0;
+    }
+
+    /* || MISSION SECTION */
+    .mission-title {
+        line-height: 2.75rem;
+    }
+
+    .mission-description {
+        line-height: 2.1rem;
+    }
+
+    /* || ENGAGEMENT DATA SECTION */
+    .data-title {
+        padding: 3rem 0 0 0;
+    }
+
+    .data-container {
+        height: 6rem;
+    }
+
+    .data-column {
+        width: 22rem;
+        height: 22rem;
+    }
+
+    .data-label {
+        max-width: 10rem;
+    }
+
     /* || CARDS SECTION */
     .cards-section {
-        padding: 10rem 20rem;
+        padding: 6rem 20rem;
         justify-content: center;
         gap: 3.5rem;
     }
@@ -313,7 +364,7 @@
 
     .card-text {
         padding-top: 1.5rem;
-        line-height: 2rem;
+        line-height: 1.5rem;
     }
 
     .card-btn {
