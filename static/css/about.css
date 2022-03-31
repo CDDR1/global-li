@@ -1,6 +1,16 @@
 /* || HEADER AND NAVIGATION */
 /* The header styles can be found in the header.css file */
 
+/* || GENERAL */
+:root {
+    --horizontal-padding: 0 25rem;
+}
+
+.section-text {
+    margin-top: 2.5rem;
+    line-height: 2.5rem;
+}
+
 /* || HERO IMG */
 .container {
     position: relative;
@@ -15,14 +25,14 @@
     background-position: center center;
     z-index: -1;
     width: 100%;
-    height: 40%;
+    height: 35%;
     top: 0;
-    left: -30%;
+    left: 0;
 }
 
 /* || MAIN SECTION */
 main {
-    /* padding: 8rem 15rem; */
+    padding: 8rem 0;
 }
 
 /* || PAGE TITLE */
@@ -33,16 +43,14 @@ main {
 
 /* || SPLIT */
 .split {
+    padding: var(--horizontal-padding);
     display: flex;
-}
-
-.split-text {
-    margin-top: 2.5rem;
-    line-height: 2.5rem;
+    gap: 10rem;
 }
 
 /* || MISSION */
 .mission-container {
+    padding: 10rem 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -54,12 +62,36 @@ main {
 }
 
 .mission-text {
-    padding: 5rem 30rem;
+    padding: var(--horizontal-padding);
+    padding-top: 5rem;
+    padding-bottom: 5rem;
     color: rgb(47, 47, 47);
     background-color: var(--tertiary-color);
     line-height: 3.5rem;
 }
 
+/* || GRID */
+.grid {
+    padding: var(--horizontal-padding);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 7rem;
+    row-gap: 5rem;
+}
+
+.grid-item-flex-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 3.5rem;
+}
+
+.grid-item-flex-container > * {
+    width: 100%;
+}
+
+.grid-item-img {
+    width: 100%;
+}
 
 .team-member-info {
     display: flex;
@@ -85,36 +117,6 @@ main {
     text-decoration: underline;
 }
 
-/* || GRID */
-.grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 10rem;
-    row-gap: 8rem;
-}
-
-.grid-row-gap {
-    grid-column: 1 / 3;
-}
-
-.grid-item-flex-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 3.5rem;
-}
-
-.grid-item-flex-container > * {
-    width: 100%;
-}
-
-.grid-item-img {
-    width: 100%;
-}
-
-.grid-item-2 .grid-item-text {
-    margin-top: 5.5rem;
-}
-
 /* || LIST STYLES */
 .list {
     margin-top: 1.5rem;
@@ -123,7 +125,7 @@ main {
 .list-item {
     display: block;
     list-style: disc inside;
-    font-size: var(--fs-300);
+    font-size: var(--fs-200);
     font-weight: 600;
     position: relative;
     margin: 0.8rem 0 0.8rem 2.5rem;
