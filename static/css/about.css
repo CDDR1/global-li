@@ -146,7 +146,34 @@ main {
 /* Footer styles can be found in the footer.css file */
 
 /* || Responsive */
+@media (max-width: 1700px) {
+    :root {
+        --horizontal-padding: 0 20rem;
+    }
+
+    /* || TITLE */
+    .page-title {
+        margin: 15rem 0;
+    }
+
+    /* || GRID */
+    .grid {
+        column-gap: 5rem;
+        row-gap: 3rem;
+    }
+
+    .grid-item-flex-container {
+        gap: 2.5rem;
+    }
+}
+
 @media (max-width: 1590px) {
+    /* || TITLE */
+    .page-title {
+        margin: 12rem 0;
+    }
+
+    /* || GRID */
     .grid-item-text {
         line-height: 2rem;
     }
@@ -157,41 +184,50 @@ main {
 }
 
 @media (max-width: 1366px) {
-    /* || MAIN SECTION */
-    .grid {
-        column-gap: 6rem;
-        row-gap: 6rem;
+    /* || GENERAL STYLES */
+    .section-text {
+        margin-top: 1.5rem;
+        line-height: 1.75rem;
     }
 
-    .grid-item-text {
-        margin-top: 2rem;
-        line-height: 2rem;
+    .list-item::before {
+        margin-top: 0.2rem;
     }
 
-    .grid-item-2 .grid-item-text {
-        margin-top: 4rem;
+    /* || TITLE */
+    .page-title {
+        margin: 9rem 0;
     }
 
-    .grid-item-list {
-        margin-top: 1rem; 
+    /* || SPLIT */
+    .split {
+        gap: 5rem;
     }
 
-    .grid-item-list-item {
-        font-size: 1.5rem;
+    /* || MISSION */
+    .mission-text {
+        line-height: 2.25rem;
+        padding-top: 3rem;
+        padding-bottom: 3.5rem;
     }
 
-    .grid-item-list-item::before {
-        margin-top: 0.4rem;
-        border-width: 0.4rem;
+    /* || GRID */
+    .team-member-info {
+        gap: 0.5rem;
+    }
+
+    .team-member-description {
+        line-height: 1.5rem;
     }
 }
 
 @media (max-width: 1290px) {
-    /* || MAIN SECTION */
-    main {
-        padding: 6rem 9rem;
+    /* || GENERAL STYLES */
+    :root {
+        --horizontal-padding: 0 15rem;
     }
 
+    /* || GRID */
     .grid-item-text {
         line-height: 1.8rem;
     }
@@ -206,6 +242,20 @@ main {
 
     .team-member-description {
         line-height: 1.7rem;
+    }
+}
+
+@media (max-width: 1140px) {
+    /* || GENERAL STYLES */
+    :root {
+        --horizontal-padding: 0 12rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    /* || TITLE */
+    .page-title {
+        margin: 7rem;
     }
 }
 
