@@ -379,6 +379,16 @@
         left: 95px;
     }
 
+    /* || ENGAGEMENT DATA SECTION */
+    .data-container {
+        height: 5rem;
+    }
+
+    .data-column {
+        width: 19rem;
+        height: 19rem;
+    }
+
     /* || CARDS SECTION */
     .cards-section {
         gap: 3.5rem;

@@ -1,0 +1,70 @@
+/* || GENERAL STYLES */
+:root {
+    --line-height: 2.5rem;
+}
+
+.container {
+    position: relative;
+}
+
+.container::before {
+    content: '';
+    background: url(../img/dashboards-background.svg) no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 70%;
+    width: 100%;
+}
+
+/* || MAIN SECTION */
+main {
+    padding: 17rem 28rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.page-title {
+    margin-top: 10rem;
+    text-align: center;
+    color: var(--accent-color);
+    font-size: var(--fs-700);
+}
+
+.dashboards-split {
+    margin: 15rem 0 4rem 0;
+    display: flex;
+    gap: 4rem;
+}
+
+.dashboard-container {
+    box-shadow: var(--dashboard-shadow);
+}
+
+.left-dashboard, 
+.right-dashboard,
+.center-dashboard {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.small-dashboard {
+    height: 35rem;
+    width: 100%;
+}
+
+.long-dashboard {
+    height: 70rem;
+    width: 100%;
+}
+
+/* || RESPONSIVE */
+@media (max-width: 1700px) {
+    /* || MAIN */
+    main {
+        padding: 17rem 20rem;
+    }
+}
