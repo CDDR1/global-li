@@ -62,9 +62,61 @@ main {
 }
 
 /* || RESPONSIVE */
-@media (max-width: 1700px) {
+@media (max-width: 1500px) {
     /* || MAIN */
     main {
-        padding: 17rem 20rem;
+        padding: 15rem 20rem;
+    }
+
+    .small-dashboard {
+        height: 32rem;
+    }
+
+    .long-dashboard {
+        height: 55rem;
+    }
+}
+
+@media (max-width: 1366px) {
+    /* || MAIN */
+    main {
+        padding: 12rem 15rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    /* || MAIN */
+    main {
+        padding: 10rem;
+    }
+
+    .small-dashboard {
+        height: 28rem;
+    }
+
+    .long-dashboard {
+        height: 50rem;
+    }
+}
+
+@media (max-width: 1100px) {
+    /* || MAIN */
+    main {
+        padding: 7rem 10rem;
+    }
+
+    .small-dashboard {
+        height: 23rem;
+    }
+
+    .long-dashboard {
+        height: 45rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    /* || MAIN */
+    main {
+        padding: 3rem 10rem 7rem 10rem;
     }
 }
