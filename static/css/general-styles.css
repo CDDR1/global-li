@@ -109,10 +109,18 @@ textarea {
     box-shadow: 0px 4px 5px 0px rgba(172, 171, 171, 0.62);
 }
 
+.page-title {
+    padding: 25rem 0 15rem;
+}
+
 /* || RESPONSIVE */
 @media (max-width: 1700px) {
     .btn {
         padding: 1rem 3rem;
+    }
+
+    .page-title {
+        padding: 22rem 0 12rem;
     }
 }
 
@@ -129,6 +137,10 @@ textarea {
         --fs-500: 2.5rem;
         --fs-700: 3.5rem;
         --fs-2xl: 5.5rem;
+    }
+
+    .page-title {
+        padding: 15rem 0 10rem;
     }
 }
 
