@@ -116,6 +116,11 @@ main {
     text-decoration: underline;
 }
 
+.grid-item-2 {
+    display: flex;
+    align-items: flex-end;
+}
+
 /* || LIST STYLES */
 .list {
     margin-top: 1.5rem;
