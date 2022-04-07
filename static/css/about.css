@@ -149,7 +149,7 @@ main {
 /* || FOOTER */
 /* Footer styles can be found in the footer.css file */
 
-/* || Responsive */
+/* || RESPONSIVE */
 @media (max-width: 1700px) {
     :root {
         --horizontal-padding: 0 20rem;

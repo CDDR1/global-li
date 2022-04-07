@@ -23,17 +23,18 @@
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
+    transition: transform 0.3s;
 }
 
 .hamburger-menu span {
     display: block;
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     height: 0.7rem;
     border-radius: 15px;
 }
 
-.hamburger-menu span.active {
-    background-color: var(--accent-color);
+.hamburger-menu.active {
+    transform: rotate(90deg);
 }
 
 .line-1, 
