@@ -317,7 +317,7 @@ main {
 
     /* || HERO IMG SIZE */
     .container::before {
-        height: 50vh;
+        height: 60vh;
     }
 
     /* || SPLIT */
@@ -346,6 +346,10 @@ main {
         line-height: 3rem;
     }
 
+    .list-item::before {
+        margin-top: 0.2rem;
+    }
+
     /* || GRID */
     .grid {
         gap: 4rem;
@@ -359,18 +363,42 @@ main {
         border-radius: 10px;
     }
 
-    /* .team-member-name {
-        font-size: var(--fs-200);
+    .team-member-description {
+        line-height: 2.5rem;
+    }
+}
+
+@media (max-width: 375px) {
+    /* || GENERAL STYLES */
+    .section-text {
+        line-height: 2.5rem;
     }
 
-    .team-member-role {
-        font-size: var(--fs-100);
+    .list-item::before {
+        border: 0.6rem solid var(--primary-color);
+    }
+
+    main {
+        padding-bottom: 4rem;
+    }
+
+    /* || MISSION */
+    .mission-title {
+        margin: 2rem 0;
+    }
+
+    .mission-text {
+        margin: 0;
+    }
+
+    /* || GRID */
+    .grid-item-flex-container {
+        gap: 2rem;
     }
 
     .team-member-description {
         line-height: 2rem;
-        font-size: var(--fs-100);
-    } */
+    }
 }
 
 @media (max-width: 285px) {
