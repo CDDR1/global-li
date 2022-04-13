@@ -165,9 +165,14 @@ main {
 }
 
 @media (max-width: 980px) {
+    /* || BACKGROUND IMG */
+    .container::before {
+        height: 100%;
+    }
+
     /* || MAIN */
     main {
-        padding: 10rem 5rem;
+        padding: 0 5rem 6rem;
     }
 
     .grid {
@@ -185,6 +190,10 @@ main {
         gap: 2rem;
     }
 
+    .form-section {
+        gap: 2rem;
+    }
+
     .form-input {
         padding: 2.5rem 3rem;
         border-radius: 15px;
@@ -193,13 +202,14 @@ main {
     .form-btn {
         font-size: var(--fs-200);
         padding: 3rem 14rem;
+        margin: 3rem 0;
         align-self: center;
     }
 }
 
 @media (max-width: 680px) {
     main {
-        padding: 10rem 3.5rem;
+        padding: 0 3.5rem 6rem;
     }
 
     .form-btn {
@@ -209,17 +219,25 @@ main {
 
 @media (max-width: 560px) {
     main {
-        padding: 8rem 2rem;
+        padding: 0 2rem 5rem;
+    }
+
+    .form-section {
+        margin: 2rem 0;
+    }
+
+    .form-input {
+        padding: 2rem 2.5rem;
     }
 }
 
 @media (max-width: 475px) {
     main {
-        padding: 6rem 2rem;
+        padding: 0 2rem 5rem;
     }
 
     .left-description {
-        line-height: 3.5rem;
+        line-height: 3rem;
     }
 
     .left-section-form > * {
@@ -235,9 +253,44 @@ main {
     }
 }
 
-@media (max-width: 275px) {
+@media (max-width: 400px) {
+    .grid {
+        gap: 2rem;
+    }
+
+    .left-content {
+        gap: 1rem;
+    }
+
+    .email-info {
+        margin: 4rem 0;
+        gap: 1rem;
+    }
+
+    .form-section {
+        margin: 1rem 0;
+        gap: 1rem;
+    }
+
+    .form-input {
+        padding: 1.5rem 1rem;
+        border-radius: 10px;
+    }
+
+    .form-textarea {
+        padding: 1.5rem 1rem;
+        border-radius: 10px;
+    }
+
+    .form-btn {
+        margin: 0;
+        padding: 1.5rem 7rem;
+    }
+}
+
+@media (max-width: 285px) {
     main {
-        padding: 4rem 1rem;
+        padding: 0 1rem 4rem;
     }
 
     .grid {
