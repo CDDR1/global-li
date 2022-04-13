@@ -91,11 +91,6 @@ main {
 }
 
 @media (max-width: 1200px) {
-    /* || MAIN */
-    /* main {
-        padding: 10rem;
-    } */
-
     .small-dashboard {
         height: 28rem;
     }
@@ -119,5 +114,85 @@ main {
     /* || MAIN */
     main {
         padding: 0rem 10rem 7rem;
+    }
+}
+
+@media (max-width: 980px) {
+    /* || MAIN */
+    main {
+        padding: 0rem 5rem 7rem;
+    }
+
+    /* || SPLIT */
+    .dashboards-split {
+        flex-direction: column;
+    }
+
+    /* || DASHBOARDS */
+    .dashboard-container {
+        height: 45rem;
+    }
+
+    .dashboard-title {
+        margin-bottom: 3rem;
+    }
+
+    .dashboard-description {
+        line-height: 5rem;
+        margin: 3rem 0;
+    }
+}
+
+@media (max-width: 680px) {
+    /* || MAIN */
+    main {
+        padding: 0 3.5rem 5rem;
+    }
+
+    /* || DASHBOARDS */
+    .dashboard-container {
+        max-height: 40rem;
+    }
+}
+
+@media (max-width: 560px) {
+    /* || MAIN */
+    main {
+        padding: 0 3rem 5rem;
+    }
+
+    /* || DASHBOARDS */
+    .dashboard-container {
+        max-height: 30rem;
+    }
+
+    .dashboard-title {
+        margin-bottom: 1rem;
+    }
+    
+    .dashboard-description {
+        margin: 1.5rem 0;
+        line-height: 2.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    /* || DASHBOARDS */
+    .dashboard-container {
+        max-height: 25rem;
+    }
+}
+
+@media (max-width: 400px) {
+    /* || DASHBOARDS */
+    .dashboard-container {
+        max-height: 20rem;
+    }
+}
+
+@media (max-width: 285px) {
+    /* || MAIN */
+    main {
+        padding: 0 1rem 3rem;
     }
 }

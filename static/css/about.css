@@ -90,6 +90,7 @@ main {
 
 .grid-item-img {
     width: 100%;
+    border-radius: 8px;
 }
 
 .team-member-info {
@@ -317,7 +318,7 @@ main {
 
     /* || HERO IMG SIZE */
     .container::before {
-        height: 60vh;
+        height: 45vh;
     }
 
     /* || SPLIT */
