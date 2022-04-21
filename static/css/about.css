@@ -302,6 +302,13 @@ main {
     }
 }
 
+@media (max-width: 700px) {
+    /* || GRID */
+    .grid-item-flex-container {
+        flex-direction: column;
+    }
+}
+
 @media (max-width: 620px) {
     /* || GENERAL STYLES */
     .list-item::before {
