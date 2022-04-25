@@ -65,4 +65,4 @@ const fetchData = () => {
         .catch(err => console.log(err));
 };
 
-window.addEventListener('DOMContentLoaded', fetchData);
+// window.addEventListener('DOMContentLoaded', fetchData);
