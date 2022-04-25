@@ -45,6 +45,10 @@
     color: var(--accent-color);
 }
 
+.footer-nav-link:hover {
+    text-decoration: underline;
+}
+
 .gbl-container {
     margin: 5rem 0;
 }
