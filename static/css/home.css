@@ -786,6 +786,10 @@
     }
     
     /* || MISSION SECTION */
+    .mission-section {
+        margin-top: 0;
+    }
+
     .mission-split {
         gap: 3rem;
     }
