@@ -24,6 +24,7 @@
 
 // window.addEventListener('DOMContentLoaded', initViz);
 
+//==================================================================================================
 
 // Let's try fetching the API here...
 // FOR REFERENCE: data[0].PageLink[0].LinkName
