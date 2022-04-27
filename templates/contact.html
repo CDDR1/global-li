@@ -29,7 +29,7 @@
                     <!-- Right Content -->
                     <div class="left-content">
                         <h2 class="left-title">Reach Out to Us</h2>
-                        <p class="left-description">We apprecciate your feedback and question to support this inititative and to enhance the internationalization of Long Island.</p>
+                        <p class="left-description">We apprecciate your feedback and questions to support this inititative and to enhance the internationalization of Long Island.</p>
                     </div>
                     <!-- Right Content -->
                     <div class="right-content">
@@ -38,7 +38,7 @@
                             <span class="email">Email: fengj@farmingdale.edu</span>
                         </div>
                     </div>
-                    <form action="" class="left-section-form">
+                    <form id="form" action="https://formspree.io/f/xknypovv" method="POST" class="left-section-form">
                         <div class="form-section">
                             <label for="name">Name</label>
                             <input type="text" class="form-input" id="name" name="name" placeholder="Enter your name" required>
@@ -49,7 +49,7 @@
                         </div>
                         <div class="form-section">
                             <label for="message"></label>
-                            <textarea name="message" class="form-textarea" id="message" cols="30" rows="6" placeholder="Type something..."></textarea>
+                            <textarea name="message" class="form-textarea" id="message" name="message" cols="30" rows="6" placeholder="Type something..."></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary form-btn">Submit</button>
                     </form>
@@ -64,5 +64,8 @@
         {% include './mobile-footer.html' %}
         
     </div>
+
+    <!-- JavaScript -->
+    <script src="../static/js/contact-form.js"></script>
 </body>
 </html>
