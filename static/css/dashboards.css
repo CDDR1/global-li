@@ -62,22 +62,22 @@ main {
     width: 100%;
     box-shadow: var(--dashboard-shadow);
 }
-
-/* .dashboards-split {
+/* COMMENT THIS LATER ||||||||||| */
+.dashboards-split {
     margin-bottom: 4rem;
     display: flex;
     gap: 4rem;
-} */
+} 
 
-/* .left-dashboard, 
+.left-dashboard, 
 .right-dashboard,
 .center-dashboard {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-} */
+} 
 
-/* .small-dashboard {
+.small-dashboard {
     height: 35rem;
     width: 100%;
 }
@@ -85,7 +85,8 @@ main {
 .long-dashboard {
     height: 70rem;
     width: 100%;
-} */
+} 
+/* UNTIL THIS PART ||||||||| */
 
 /* || RESPONSIVE */
 @media (max-width: 1700px) {
