@@ -17,6 +17,7 @@
 }
 
 .hamburger-menu {
+    margin-top: 0.9rem;
     width: 10rem;
     z-index: 11;
     display: flex;
