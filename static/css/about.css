@@ -3,148 +3,149 @@
 
 /* || GENERAL */
 :root {
-    --horizontal-padding: 0 25rem;
+  --horizontal-padding: 0 25rem;
 }
 
 .section-text {
-    margin-top: 2.5rem;
-    line-height: 2.5rem;
+  margin-top: 2.5rem;
+  line-height: 2.5rem;
 }
 
 /* || MAIN */
 main {
-    padding-bottom: 15rem;
+  padding-bottom: 15rem;
 }
 
 /* || HERO IMG */
 .container {
-    position: relative;
+  position: relative;
 }
 
 .container::before {
-    content: '';
-    position: absolute;
-    background: url(../img/hero-img.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    z-index: -1;
-    width: 100%;
-    height: 35%;
-    top: 0;
-    left: 0;
+  content: "";
+  position: absolute;
+  background: url(../img/hero-img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  z-index: -1;
+  width: 100%;
+  height: 35%;
+  top: 0;
+  left: 0;
 }
 
 /* || PAGE TITLE */
 .page-title {
-    text-align: center;
+  text-align: center;
 }
 
 /* || SPLIT */
 .split {
-    padding: var(--horizontal-padding);
-    display: flex;
-    gap: 10rem;
+  padding: var(--horizontal-padding);
+  display: flex;
+  gap: 10rem;
 }
 
 /* || MISSION */
 .mission-container {
-    padding: 10rem 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  padding: 10rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .mission-title {
-    color: var(--tertiary-dark-color);
-    margin: 3rem 0;
+  color: var(--tertiary-dark-color);
+  margin: 3rem 0;
 }
 
 .mission-text {
-    padding: var(--horizontal-padding);
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-    color: rgb(47, 47, 47);
-    background-color: var(--tertiary-color);
-    line-height: 3.5rem;
+  padding: var(--horizontal-padding);
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  color: rgb(47, 47, 47);
+  background-color: var(--tertiary-color);
+  line-height: 3.5rem;
 }
 
 /* || GRID */
 .grid {
-    padding: var(--horizontal-padding);
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 7rem;
-    row-gap: 5rem;
+  padding: var(--horizontal-padding);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 7rem;
+  row-gap: 5rem;
 }
 
 .grid-item-flex-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 3.5rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 3.5rem;
 }
 
 .grid-item-flex-container > * {
-    width: 100%;
+  width: 100%;
 }
 
 .grid-item-img {
-    width: 100%;
-    border-radius: 8px;
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
 }
 
 .team-member-info {
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
 }
 
 .team-member-name {
-    color: var(--accent-color);
-    font-size: var(--fs-300);
+  color: var(--accent-color);
+  font-size: var(--fs-300);
 }
 
 .team-member-role {
-    color: #b8b8b8;
-    font-weight: 300;
+  color: #b8b8b8;
+  font-weight: 300;
 }
 
 .team-member-description {
-    line-height: 2.5rem;
+  line-height: 2.5rem;
 }
 
 .portfolio-site-link:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .grid-item-2 {
-    display: flex;
-    align-items: flex-end;
+  display: flex;
+  align-items: flex-end;
 }
 
 /* || LIST STYLES */
 .list {
-    margin-top: 1.5rem;
+  margin-top: 1.5rem;
 }
 
 .list-item {
-    display: block;
-    list-style: disc inside;
-    font-size: var(--fs-200);
-    font-weight: 600;
-    position: relative;
-    margin: 0.8rem 0 0.8rem 2.5rem;
+  display: block;
+  list-style: disc inside;
+  font-size: var(--fs-200);
+  font-weight: 600;
+  position: relative;
+  margin: 0.8rem 0 0.8rem 2.5rem;
 }
 
 .list-item::before {
-    content: '';
-    border: 0.5rem solid var(--primary-color);
-    border-radius: 100%;
-    height: 0; 
-    width: 0;
-    margin-top: 0.7rem;
-    margin-left: -2rem;
-    position: absolute;
+  content: "";
+  border: 0.5rem solid var(--primary-color);
+  border-radius: 100%;
+  height: 0;
+  width: 0;
+  margin-top: 0.7rem;
+  margin-left: -2rem;
+  position: absolute;
 }
 
 /* || FOOTER */
@@ -152,276 +153,275 @@ main {
 
 /* || RESPONSIVE */
 @media (max-width: 1700px) {
-    :root {
-        --horizontal-padding: 0 20rem;
-    }
+  :root {
+    --horizontal-padding: 0 20rem;
+  }
 
-    /* || MAIN */
-    main {
-        padding-bottom: 12rem;
-    }
+  /* || MAIN */
+  main {
+    padding-bottom: 12rem;
+  }
 
-    /* || GRID */
-    .grid {
-        column-gap: 5rem;
-        row-gap: 3rem;
-    }
+  /* || GRID */
+  .grid {
+    column-gap: 5rem;
+    row-gap: 3rem;
+  }
 
-    .grid-item-flex-container {
-        gap: 2.5rem;
-    }
+  .grid-item-flex-container {
+    gap: 2.5rem;
+  }
 }
 
 @media (max-width: 1590px) {
-    /* || GRID */
-    .grid-item-text {
-        line-height: 2rem;
-    }
+  /* || GRID */
+  .grid-item-text {
+    line-height: 2rem;
+  }
 
-    .team-member-description {
-        line-height: 2rem;
-    }
+  .team-member-description {
+    line-height: 2rem;
+  }
 }
 
 @media (max-width: 1366px) {
-    /* || GENERAL STYLES */
-    .section-text {
-        margin-top: 1.5rem;
-        line-height: 1.75rem;
-    }
+  /* || GENERAL STYLES */
+  .section-text {
+    margin-top: 1.5rem;
+    line-height: 1.75rem;
+  }
 
-    .list-item::before {
-        margin-top: 0.2rem;
-    }
+  .list-item::before {
+    margin-top: 0.2rem;
+  }
 
-    /* || MAIN */
-    main {
-        padding-bottom: 10rem;
-    }
+  /* || MAIN */
+  main {
+    padding-bottom: 10rem;
+  }
 
-    /* || SPLIT */
-    .split {
-        gap: 5rem;
-    }
+  /* || SPLIT */
+  .split {
+    gap: 5rem;
+  }
 
-    /* || MISSION */
-    .mission-text {
-        line-height: 2.25rem;
-        padding-top: 3rem;
-        padding-bottom: 3.5rem;
-    }
+  /* || MISSION */
+  .mission-text {
+    line-height: 2.25rem;
+    padding-top: 3rem;
+    padding-bottom: 3.5rem;
+  }
 
-    /* || GRID */
-    .team-member-info {
-        gap: 0.5rem;
-    }
+  /* || GRID */
+  .team-member-info {
+    gap: 0.5rem;
+  }
 
-    .team-member-description {
-        line-height: 1.5rem;
-    }
+  .team-member-description {
+    line-height: 1.5rem;
+  }
 }
 
 @media (max-width: 1290px) {
-    /* || GENERAL STYLES */
-    :root {
-        --horizontal-padding: 0 15rem;
-    }
+  /* || GENERAL STYLES */
+  :root {
+    --horizontal-padding: 0 15rem;
+  }
 
-    /* || GRID */
-    .grid-item-text {
-        line-height: 1.8rem;
-    }
+  /* || GRID */
+  .grid-item-text {
+    line-height: 1.8rem;
+  }
 
-    .grid-item-list-item {
-        font-size: var(--fs-200);
-    }
+  .grid-item-list-item {
+    font-size: var(--fs-200);
+  }
 
-    .grid-item-flex-container {
-        gap: 2.2rem;
-    }
+  .grid-item-flex-container {
+    gap: 2.2rem;
+  }
 
-    .team-member-description {
-        line-height: 1.7rem;
-    }
+  .team-member-description {
+    line-height: 1.7rem;
+  }
 }
 
 @media (max-width: 1140px) {
-    /* || GENERAL STYLES */
-    :root {
-        --horizontal-padding: 0 12rem;
-    }
+  /* || GENERAL STYLES */
+  :root {
+    --horizontal-padding: 0 12rem;
+  }
 }
 
 @media (max-width: 980px) {
-    /* || GENERAL STYLES */
-    .section-text {
-        line-height: 5rem;
-    }
+  /* || GENERAL STYLES */
+  .section-text {
+    line-height: 5rem;
+  }
 
-    .list-item::before {
-        margin-top: 0.6rem;
-        margin-left: -2.75rem;
-        border: 1rem solid var(--primary-color);
-    }
+  .list-item::before {
+    margin-top: 0.6rem;
+    margin-left: -2.75rem;
+    border: 1rem solid var(--primary-color);
+  }
 
-    /* || HERO IMG SIZE */
-    .container::before {
-        height: 60vh;
-    }
+  /* || HERO IMG SIZE */
+  .container::before {
+    height: 60vh;
+  }
 
-    /* || SPLIT */
-    .split {
-        padding: 0 5rem;
-        flex-direction: column;
-    }
+  /* || SPLIT */
+  .split {
+    padding: 0 5rem;
+    flex-direction: column;
+  }
 
-    /* || MISSION */
-    .mission-text {
-        padding: 3rem 5rem;
-    }
+  /* || MISSION */
+  .mission-text {
+    padding: 3rem 5rem;
+  }
 
-    /* || GRID */
-    .grid {
-        grid-template-columns: 1fr;
-        padding: 0 5rem;
-        gap: 7rem;
-    }
+  /* || GRID */
+  .grid {
+    grid-template-columns: 1fr;
+    padding: 0 5rem;
+    gap: 7rem;
+  }
 
-    .grid-item-flex-container {
-        gap: 4rem;
-    }
+  .grid-item-flex-container {
+    gap: 4rem;
+  }
 
-    .grid-item-img {
-        height: 100%;
-        object-fit: cover;
-        border-radius: 20px;
-    }
+  .grid-item-img {
+    height: 100%;
+    border-radius: 20px;
+  }
 
-    .team-member-description {
-        line-height: 4rem;
-    }
+  .team-member-description {
+    line-height: 4rem;
+  }
 }
 
 @media (max-width: 700px) {
-    /* || GRID */
-    .grid-item-flex-container {
-        flex-direction: column;
-    }
+  /* || GRID */
+  .grid-item-flex-container {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 620px) {
-    /* || GENERAL STYLES */
-    .list-item::before {
-        border: 0.8rem solid var(--primary-color);
-        margin-top: 0.8rem;
-    }
+  /* || GENERAL STYLES */
+  .list-item::before {
+    border: 0.8rem solid var(--primary-color);
+    margin-top: 0.8rem;
+  }
 }
 
 @media (max-width: 560px) {
-    /* || MAIN */
-    main {
-        padding-bottom: 7rem;
-    }
+  /* || MAIN */
+  main {
+    padding-bottom: 7rem;
+  }
 
-    /* || HERO IMG SIZE */
-    .container::before {
-        height: 45vh;
-    }
+  /* || HERO IMG SIZE */
+  .container::before {
+    height: 45vh;
+  }
 
-    /* || SPLIT */
-    .split {
-        padding: 0 2rem;
-    }
+  /* || SPLIT */
+  .split {
+    padding: 0 2rem;
+  }
 
-    /* || MISSION */
-    .mission-container {
-        padding: 7rem 0;
-    }
+  /* || MISSION */
+  .mission-container {
+    padding: 7rem 0;
+  }
 
-    .mission-text {
-        padding: 3rem 2rem;
-    }
+  .mission-text {
+    padding: 3rem 2rem;
+  }
 
-    /* || GRID */
-    .grid {
-        padding: 0 2rem;
-    }
+  /* || GRID */
+  .grid {
+    padding: 0 2rem;
+  }
 }
 
 @media (max-width: 475px) {
-    /* || GENERAL STYLES */
-    .section-text {
-        line-height: 3rem;
-    }
+  /* || GENERAL STYLES */
+  .section-text {
+    line-height: 3rem;
+  }
 
-    .list-item::before {
-        margin-top: 0.2rem;
-    }
+  .list-item::before {
+    margin-top: 0.2rem;
+  }
 
-    /* || GRID */
-    .grid {
-        gap: 4rem;
-    }
+  /* || GRID */
+  .grid {
+    gap: 4rem;
+  }
 
-    .grid-item-flex-container {
-        gap: 3rem;
-    }
+  .grid-item-flex-container {
+    gap: 3rem;
+  }
 
-    .grid-item-img {
-        border-radius: 10px;
-    }
+  .grid-item-img {
+    border-radius: 10px;
+  }
 
-    .team-member-description {
-        line-height: 2.5rem;
-    }
+  .team-member-description {
+    line-height: 2.5rem;
+  }
 }
 
 @media (max-width: 375px) {
-    /* || GENERAL STYLES */
-    .section-text {
-        line-height: 2.5rem;
-    }
+  /* || GENERAL STYLES */
+  .section-text {
+    line-height: 2.5rem;
+  }
 
-    .list-item::before {
-        border: 0.6rem solid var(--primary-color);
-    }
+  .list-item::before {
+    border: 0.6rem solid var(--primary-color);
+  }
 
-    main {
-        padding-bottom: 4rem;
-    }
+  main {
+    padding-bottom: 4rem;
+  }
 
-    /* || MISSION */
-    .mission-title {
-        margin: 2rem 0;
-    }
+  /* || MISSION */
+  .mission-title {
+    margin: 2rem 0;
+  }
 
-    .mission-text {
-        margin: 0;
-    }
+  .mission-text {
+    margin: 0;
+  }
 
-    /* || GRID */
-    .grid-item-flex-container {
-        gap: 2rem;
-    }
+  /* || GRID */
+  .grid-item-flex-container {
+    gap: 2rem;
+  }
 
-    .team-member-description {
-        line-height: 2rem;
-    }
+  .team-member-description {
+    line-height: 2rem;
+  }
 }
 
 @media (max-width: 285px) {
-    /* || SPLIT */
-    .split {
-        padding: 0 1rem;
-    }
+  /* || SPLIT */
+  .split {
+    padding: 0 1rem;
+  }
 
-    /* || MISSION */
-    .mission-text {
-        padding: 2rem 1rem;
-    }
+  /* || MISSION */
+  .mission-text {
+    padding: 2rem 1rem;
+  }
 
-    /* || GRID */
-    .grid {
-        padding: 0 1rem;
-    }
+  /* || GRID */
+  .grid {
+    padding: 0 1rem;
+  }
 }
