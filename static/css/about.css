@@ -8,7 +8,7 @@
 
 .section-text {
     margin-top: 2.5rem;
-    line-height: 2.5rem;
+    line-height: 2.75rem;
 }
 
 /* || MAIN */
@@ -57,7 +57,8 @@ main {
 
 .mission-title {
     color: var(--tertiary-dark-color);
-    margin: 3rem 0;
+    margin: 1rem 0;
+    font-weight: 600;
 }
 
 .mission-text {
@@ -175,10 +176,6 @@ main {
 
 @media (max-width: 1590px) {
     /* || GRID */
-    .grid-item-text {
-        line-height: 2rem;
-    }
-
     .team-member-description {
         line-height: 2rem;
     }
@@ -188,7 +185,7 @@ main {
     /* || GENERAL STYLES */
     .section-text {
         margin-top: 1.5rem;
-        line-height: 1.75rem;
+        line-height: 1.9rem;
     }
 
     .list-item::before {
