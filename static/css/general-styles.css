@@ -1,7 +1,7 @@
 /* || GENERAL STYLES */
 :root {
     --primary-color: #60838d;
-    --secondary-color:#e4e7e8;
+    --secondary-color: #e4e7e8;
     --tertiary-color: #eeebe4;
     --tertiary-dark-color: #5d5a52;
     --accent-color: #214359;
@@ -11,7 +11,7 @@
     --dashboard-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     --fs-100: 1.2rem;
     --fs-200: 1.8rem;
-    --fs-300: 2.3rem; 
+    --fs-300: 2.3rem;
     --fs-500: 3.5rem;
     --fs-700: 4.5rem;
     --fs-2xl: 7rem;
@@ -34,7 +34,7 @@ body {
     position: relative;
 }
 
-*, 
+*,
 *::before,
 *::after {
     box-sizing: inherit;
@@ -72,16 +72,16 @@ button,
 input,
 select,
 textarea {
-  font-family: inherit;
-  font-size: 100%;
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  color: inherit;
+    font-family: inherit;
+    font-size: 100%;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: inherit;
 }
 
 textarea {
-  overflow: auto;
+    overflow: auto;
 }
 
 .selected {
@@ -137,7 +137,7 @@ textarea {
 
 @media (max-width: 1366px) {
     :root {
-        --fs-200: 1.3rem; 
+        --fs-200: 1.3rem;
         --fs-300: 1.8rem;
         --fs-500: 2.5rem;
         --fs-700: 3.5rem;

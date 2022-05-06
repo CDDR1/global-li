@@ -1,25 +1,29 @@
 // TESTING IF THIS IS GOING TO WORK
-const urls = ["https://public.tableau.com/views/Top10LIFDIInvestorsbycountry/Bycountry", 
-"https://public.tableau.com/views/LIFDIEmploymentbycountry/Bycountry", 
-"https://public.tableau.com/views/LIFDIEmployment/LIFDIEmployment"];
+const urls = [
+    "https://public.tableau.com/views/Top10LIFDIInvestorsbycountry/Bycountry",
+    "https://public.tableau.com/views/LIFDIEmploymentbycountry/Bycountry",
+    "https://public.tableau.com/views/LIFDIEmployment/LIFDIEmployment",
+];
 
-const fetchUrls = urls => {
+const fetchUrls = (urls) => {
     urls.forEach((url, index) => {
         const containerDiv = document.createElement("div");
         containerDiv.id = `vizContainer${index + 1}`;
         containerDiv.style.width = "100%";
         containerDiv.style.height = "100%";
-    
-        const dashboardContainers = document.querySelectorAll('.dashboard-container');
+
+        const dashboardContainers = document.querySelectorAll(
+            ".dashboard-container"
+        );
         dashboardContainers[index].appendChild(containerDiv);
-    
+
         const options = {
-            hideTabs: true
+            hideTabs: true,
         };
         const viz = new tableau.Viz(containerDiv, url, options);
     });
 };
-window.addEventListener('DOMContentLoaded', fetchUrls(urls));
+window.addEventListener("DOMContentLoaded", fetchUrls(urls));
 
 //==================================================================================================
 // const initViz = () => {
@@ -29,7 +33,6 @@ window.addEventListener('DOMContentLoaded', fetchUrls(urls));
 //             hideTabs: true
 //         };
 //     const viz = new tableau.Viz(containerDiv1, url, options);
-
 
 //     const containerDiv2 = document.getElementById("vizContainer2"),
 //     url2 = "https://public.tableau.com/views/LIFDIEmploymentbycountry/Bycountry",

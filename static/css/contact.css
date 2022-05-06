@@ -7,7 +7,7 @@
 }
 
 .container::before {
-    content: '';
+    content: "";
     background: url(../img/contact-page-background.svg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -34,7 +34,7 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 15rem;
-} 
+}
 
 .left-content {
     display: flex;
@@ -180,7 +180,7 @@ main {
     .grid {
         grid-template-columns: 1fr;
         gap: 5rem;
-    } 
+    }
 
     .left-description {
         line-height: 5rem;

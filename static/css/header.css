@@ -1,88 +1,88 @@
 /* || HEADER */
 header {
-  z-index: 2;
-  color: var(--accent-color);
-  padding: 2.4rem 15%;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  transition: all 0.3s;
-  display: flex;
-  justify-content: space-between;
+    z-index: 2;
+    color: var(--accent-color);
+    padding: 2.4rem 15%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: all 0.3s;
+    display: flex;
+    justify-content: space-between;
 }
 
 /* || MAIN NAV */
 .main-nav {
-  width: 100%;
+    width: 100%;
 }
 
 .main-nav-links {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .header-logo {
-  width: 21rem;
+    width: 21rem;
 }
 
 .main-nav-link {
-  font-size: var(--fs-200);
+    font-size: var(--fs-200);
 }
 
 /* || RESPONSIVE */
 @media (max-width: 1700px) {
-  header {
-    padding: 2.4rem 13%;
-  }
+    header {
+        padding: 2.4rem 13%;
+    }
 }
 
 @media (max-width: 1366px) {
-  header {
-    padding: 1.8rem 14.5%;
-  }
+    header {
+        padding: 1.8rem 14.5%;
+    }
 
-  .header-logo {
-    width: 16rem;
-  }
+    .header-logo {
+        width: 16rem;
+    }
 }
 
 @media (max-width: 1070px) {
-  .header-logo {
-    width: 13rem;
-  }
+    .header-logo {
+        width: 13rem;
+    }
 
-  .main-nav-links {
-    gap: 2rem;
-  }
+    .main-nav-links {
+        gap: 2rem;
+    }
 }
 
 @media (max-width: 1030px) {
-  header {
-    padding: 1.8rem 13%;
-  }
+    header {
+        padding: 1.8rem 13%;
+    }
 }
 
 @media (max-width: 940px) {
-  .header-logo {
-    width: 12rem;
-  }
+    .header-logo {
+        width: 12rem;
+    }
 
-  .main-nav-link {
-    font-size: var(--fs-100);
-  }
+    .main-nav-link {
+        font-size: var(--fs-100);
+    }
 }
 
 @media (max-width: 870px) {
-  .main-nav-link {
-    font-size: 0.9rem;
-  }
+    .main-nav-link {
+        font-size: 0.9rem;
+    }
 }
 
 @media (max-width: 980px) {
-  header {
-    display: none;
-  }
+    header {
+        display: none;
+    }
 }

@@ -1,4 +1,4 @@
-const form = document.querySelector('#form');
+const form = document.querySelector("#form");
 
 async function handleSubmit(e) {
     e.preventDefault();
@@ -7,12 +7,12 @@ async function handleSubmit(e) {
         method: this.method,
         body: form,
         headers: {
-            'Accept': 'application/json'
-        }
+            Accept: "application/json",
+        },
     });
     if (response.ok) {
         this.reset();
     }
 }
 
-form.addEventListener('submit', handleSubmit);
+form.addEventListener("submit", handleSubmit);

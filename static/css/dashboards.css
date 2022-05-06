@@ -8,7 +8,7 @@
 }
 
 .container::before {
-    content: '';
+    content: "";
     background: url(../img/dashboards-background.svg) no-repeat;
     position: absolute;
     top: 0;
@@ -67,15 +67,15 @@ main {
     margin-bottom: 4rem;
     display: flex;
     gap: 4rem;
-} 
+}
 
-.left-dashboard, 
+.left-dashboard,
 .right-dashboard,
 .center-dashboard {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-} 
+}
 
 .small-dashboard {
     height: 35rem;
@@ -85,7 +85,7 @@ main {
 .long-dashboard {
     height: 70rem;
     width: 100%;
-} 
+}
 /* UNTIL THIS PART ||||||||| */
 
 /* || RESPONSIVE */
@@ -197,7 +197,7 @@ main {
     .dashboard-title {
         margin-bottom: 1rem;
     }
-    
+
     .dashboard-description {
         margin: 1.5rem 0;
         line-height: 2.5rem;
