@@ -47,11 +47,6 @@
     color: var(--tertiary-dark-color);
 }
 
-.hero-title-md {
-    font-size: 170%;
-    color: var(--accent-color);
-}
-
 .hero-title-lg {
     font-size: 240%;
     color: var(--accent-color);
