@@ -97,8 +97,7 @@
     height: 9rem;
     margin: 12rem 0;
     background-color: var(--tertiary-color);
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
-        rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
     color: var(--accent-color);
     padding: 2rem 0;
     display: flex;
@@ -150,8 +149,7 @@
     width: 100%;
     color: #fff;
     background-color: rgba(96, 131, 141, 0.8);
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
-        rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
     height: 70rem;
     border-radius: 10px;
     position: relative;
@@ -219,6 +217,37 @@
     border-radius: 0 0 10px 10px;
 }
 
+/* || SOCIAL MEDIA ICONS */
+.social-media-icons {
+    position: fixed;
+    top: 90%;
+    left: 2rem;
+    display: flex;
+    gap: 1.25rem;
+}
+
+.social-media-icon {
+    font-size: var(--fs-700);
+    cursor: pointer;
+    transition: transform 0.1s;
+}
+
+.social-media-icon:hover {
+    transform: scale(1.1);
+}
+
+.fa-linkedin {
+    color: #0077b5;
+}
+
+.fa-twitter-square {
+    color: #1da1f2;
+}
+
+.fa-envelope {
+    color: rgb(153, 148, 148);
+}
+
 /* || FOOTER */
 /* Footer styles can be found in the footer.css file */
 
@@ -279,6 +308,15 @@
     /* || CARDS SECTION */
     .cards-section {
         padding: 15rem 25rem;
+    }
+
+    /* || SOCIAL MEDIA ICONS */
+    .social-media-icons {
+        gap: 1rem;
+    }
+
+    .social-media-icon {
+        font-size: 3.25rem;
     }
 }
 
@@ -415,22 +453,25 @@
     }
 }
 
+@media (max-width: 1100px) {
+    /* || SOCIAL MEDIA ICONS */
+    .social-media-icons {
+        top: 82%;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .social-media-icon {
+        font-size: 2.75rem;
+    }
+}
+
 @media (max-width: 1030px) {
     /* || HERO IMG SECTION */
     .hero-content {
         left: 135px;
     }
-
-    /* .hero-title {
-    font-size: 2rem;
-  }
-
-  .hero-description {
-    font-size: var(--fs-200);
-    line-height: 1.8rem;
-    margin: 2.5rem 0;
-    max-width: 40%;
-  } */
 
     /* || MISSION SECTION */
     .mission-section {
@@ -552,9 +593,7 @@
         height: 100%;
         margin: 0;
         padding: 0;
-        box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
-            rgba(17, 17, 26, 0.1) 0px 8px 24px,
-            rgba(17, 17, 26, 0.1) 0px 16px 56px;
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
         border-radius: 50%;
     }
 
@@ -608,6 +647,11 @@
 
     .card-btn {
         position: static;
+    }
+
+    /* || SOCIAL MEDIA ICONS */
+    .social-media-icons {
+        display: none;
     }
 }
 

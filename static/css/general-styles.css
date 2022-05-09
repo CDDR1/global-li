@@ -28,6 +28,7 @@ body {
     overflow-x: hidden;
     color: var(--body-text-color);
     background-color: var(--body-bg-color);
+    font-family: sans-serif;
 }
 
 .container {
@@ -40,7 +41,6 @@ body {
     box-sizing: inherit;
     padding: 0;
     margin: 0;
-    font-family: sans-serif;
 }
 
 h1 {
