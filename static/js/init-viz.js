@@ -1,96 +1,57 @@
-// TESTING IF THIS IS GOING TO WORK
-const urls = [
-    "https://public.tableau.com/views/Top10LIFDIInvestorsbycountry/Bycountry",
-    "https://public.tableau.com/views/LIFDIEmploymentbycountry/Bycountry",
-    "https://public.tableau.com/views/LIFDIEmployment/LIFDIEmployment",
-];
+const fetchData = async () => {
+    const res = await fetch('http://api-li.computertechclub.com/api/Pages/GetPageLinksByPageID?pageID=1');
+    const data = await res.json(); console.log(data);
 
-const fetchUrls = (urls) => {
-    urls.forEach((url, index) => {
-        const containerDiv = document.createElement("div");
-        containerDiv.id = `vizContainer${index + 1}`;
-        containerDiv.style.width = "100%";
-        containerDiv.style.height = "100%";
+    data.forEach((graph, index) => {
+        // Create new grid item to be insrted in the dashboard grid.
+        const newGridItem = document.createElement("div");
+        newGridItem.classList.add("grid-item");
 
-        const dashboardContainers = document.querySelectorAll(
-            ".dashboard-container"
-        );
-        dashboardContainers[index].appendChild(containerDiv);
+        // Create the <h2> element that will hold the graph title and append it to the grid item created previously.
+        const graphTitle = document.createElement("h2");
+        graphTitle.classList.add("graph-title");
+        graphTitle.textContent = graph.LinkName;
+        newGridItem.appendChild(graphTitle);
 
+        // Create the graph container that will contain the tableau div where the Tableau visualization will be initialized.
+        // Append the graph container to the grid item previously created.
+        const graphContainer = document.createElement("div");
+        graphContainer.classList.add("graph-container");
+        newGridItem.appendChild(graphContainer);
+
+        // Create the Tableau viz that will containe the graph. Width and height must be set to 100% so
+        // that it is completely responsive. 
+        const vizContainer = document.createElement("div");
+        vizContainer.id = `vizContainer${index + 1}`;
+        vizContainer.style.width = "100%";
+        vizContainer.style.height = "100%"; 
+
+        const currGraph = index + 1;
+        if (currGraph % 3 === 0 || (currGraph % 3 === 1 && currGraph === data.length)) {
+            newGridItem.classList.add("grid-item-large");
+
+        }
+
+        // Append the Tableau div (vizContainer) to the previously created graph container div.
+        graphContainer.appendChild(vizContainer);
+
+        // Create the <p> element that will contain the description of the graph and append it to the grid item previously created.
+        const graphDescription = document.createElement("p");
+        graphDescription.classList.add("graph-description");
+        graphDescription.textContent = graph.LinkDescription;
+        newGridItem.appendChild(graphDescription);
+
+        // Select the dashboard that contains all the graphs and append the previously created grid item to it. 
+        const dashboard = document.querySelector(".dashboard-grid");
+        dashboard.appendChild(newGridItem);
+            
         const options = {
             hideTabs: true,
         };
-        const viz = new tableau.Viz(containerDiv, url, options);
+
+        // This is the function that is used to initialize each graph. More info can be found in the Tableau JavaScript API. 
+        const viz = new tableau.Viz(vizContainer, graph.LinkUrl, options);
     });
 };
-window.addEventListener("DOMContentLoaded", fetchUrls(urls));
 
-//==================================================================================================
-// const initViz = () => {
-//     const containerDiv1 = document.getElementById("vizContainer1"),
-//         url = "https://public.tableau.com/views/Top10LIFDIInvestorsbycountry/Bycountry",
-//         options = {
-//             hideTabs: true
-//         };
-//     const viz = new tableau.Viz(containerDiv1, url, options);
-
-//     const containerDiv2 = document.getElementById("vizContainer2"),
-//     url2 = "https://public.tableau.com/views/LIFDIEmploymentbycountry/Bycountry",
-//     options2 = {
-//         hideTabs: true
-//     };
-//     const viz2  = new tableau.Viz(containerDiv2, url2, options);
-
-//     const containerDiv3 = document.getElementById("vizContainer3"),
-//     url3 = "https://public.tableau.com/views/LIFDIEmployment/LIFDIEmployment",
-//     options3 = {
-//         hideTabs: true
-//     };
-//     const viz3 = new tableau.Viz(containerDiv3, url3, options);
-// }
-
-// window.addEventListener('DOMContentLoaded', initViz);
-
-//==================================================================================================
-
-// Let's try fetching the API here...
-// FOR REFERENCE: data[0].PageLink[0].LinkName
-// const createGridItem = (title, graph, description, index) => {
-//     const gridItem = document.createElement('div');
-//     gridItem.classList.add('grid-item');
-
-//     const titleElement = document.createElement('h2');
-//     titleElement.classList.add('graph-title');
-//     titleElement.textContent = title;
-//     gridItem.appendChild(titleElement);
-
-//     const graphContainer = document.createElement('div');
-//     graphContainer.classList.add('graph-container');
-//     graphContainer.innerHTML = graph;
-//     gridItem.appendChild(graphContainer);
-
-//     const descriptionElement = document.createElement('p');
-//     descriptionElement.classList.add('graph-description');
-//     descriptionElement.textContent = description;
-//     gridItem.appendChild(descriptionElement);
-
-//     if ((index + 1) % 3 === 0) {
-//         gridItem.classList.add('grid-item-large');
-//     }
-
-//     const grid = document.querySelector('.dashboard-grid');
-//     grid.appendChild(gridItem);
-// };
-
-// const fetchData = () => {
-//     fetch('https://api-li.computertechclub.com/api/Pages/GetallPages')
-//         .then(res => res.json())
-//         .then(data => {
-//             data[0].PageLink.forEach((item, index) => {
-//                 createGridItem(item.LinkName, item.LinkUrl, item.LinkDescription, index);
-//             });
-//         })
-//         .catch(err => console.log(err));
-// };
-
-// window.addEventListener('DOMContentLoaded', fetchData);
+window.addEventListener('DOMContentLoaded', fetchData);
