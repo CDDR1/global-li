@@ -15,7 +15,7 @@
 
 /* || MAIN SECTION */
 main {
-    padding: 0 24rem 15rem;
+    padding: 0 25rem 15rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -44,12 +44,12 @@ main {
     grid-column: 1 / span 2;
 }
 
-.grid-item-large > .graph-container {
-    height: 65rem;
-}
-
 .graph-title {
     align-self: flex-start;
+}
+
+.grid-item-large > .graph-container {
+    height: 65rem;
 }
 
 .graph-container {
@@ -58,146 +58,185 @@ main {
     box-shadow: var(--dashboard-shadow);
 }
 
-.dashboard-description {
+.graph-description {
     line-height: 2.5rem;
 }
 
 /* || RESPONSIVE */
 @media (max-width: 1700px) {
-    /* || MAIN */
     main {
         padding-bottom: 12rem;
     }
 }
 
 @media (max-width: 1500px) {
-    /* || MAIN */
     main {
-        padding: 0 20rem 12rem;
+        padding: 0 20rem 10rem;
     }
 
-    .small-dashboard {
-        height: 32rem;
+    .graph-container {
+        height: 30rem;
     }
 
-    .long-dashboard {
+    .grid-item-large > .graph-container {
         height: 55rem;
     }
 }
 
 @media (max-width: 1366px) {
-    /* || MAIN */
     main {
-        padding: 0 14rem 10rem;
+        padding-bottom: 7rem;
     }
 
-    .dashboard-description {
+    .graph-description {
         line-height: 2rem;
+    }
+
+    .graph-container {
+        height: 32rem;
+    }
+
+    .grid-item-large > .graph-container {
+        height: 52.5rem;
     }
 }
 
 @media (max-width: 1200px) {
-    .small-dashboard {
-        height: 28rem;
+    main {
+        padding-inline: 17rem;
     }
 
-    .long-dashboard {
-        height: 50rem;
+    .graph-container {
+        height: 25rem;
+    }
+
+    .grid-item-large > .graph-container {
+        height: 45rem;
+    }
+
+    .graph-description {
+        line-height: 1.85rem;
     }
 }
 
 @media (max-width: 1100px) {
-    .small-dashboard {
-        height: 23rem;
+    .graph-container {
+        height: 24rem;
     }
 
-    .long-dashboard {
-        height: 45rem;
+    .grid-item-large > .graph-container {
+        height: 39rem;
     }
 }
 
 @media (max-width: 1000px) {
-    /* || MAIN */
     main {
         padding: 0rem 10rem 7rem;
     }
 }
 
 @media (max-width: 980px) {
-    /* || MAIN */
     main {
         padding: 0rem 5rem 7rem;
     }
 
-    /* || SPLIT */
-    .dashboards-split {
+    .dashboard-grid {
+        display: flex;
         flex-direction: column;
     }
 
-    /* || DASHBOARDS */
-    .dashboard-container {
+    .graph-container {
         height: 45rem;
     }
 
-    .dashboard-title {
+    .grid-item-large > .graph-container {
+        height: 45rem;
+    }
+
+    .graph-title {
         margin-bottom: 3rem;
     }
 
-    .dashboard-description {
+    .graph-description {
         line-height: 5rem;
         margin: 3rem 0;
     }
 }
 
 @media (max-width: 680px) {
-    /* || MAIN */
     main {
         padding: 0 3.5rem 5rem;
     }
 
-    /* || DASHBOARDS */
-    .dashboard-container {
+    .graph-container {
         max-height: 40rem;
+    }
+
+    .grid-item-large > .graph-container {
+        height: 40rem;
+    }
+
+    .graph-description {
+        line-height: 4rem;
     }
 }
 
 @media (max-width: 560px) {
-    /* || MAIN */
     main {
         padding: 0 3rem 5rem;
     }
 
-    /* || DASHBOARDS */
-    .dashboard-container {
+    .graph-container {
         max-height: 30rem;
     }
 
-    .dashboard-title {
+    .grid-item-large > .graph-container {
+        height: 30rem;
+    }
+
+    .graph-title {
         margin-bottom: 1rem;
     }
 
-    .dashboard-description {
+    .graph-description {
         margin: 1.5rem 0;
-        line-height: 2.5rem;
+        line-height: 3.5rem;
     }
 }
 
 @media (max-width: 480px) {
-    /* || DASHBOARDS */
-    .dashboard-container {
+    .graph-container {
         max-height: 25rem;
+    }
+
+    .grid-item-large > .graph-container {
+        height: 25rem;
     }
 }
 
 @media (max-width: 400px) {
-    /* || DASHBOARDS */
-    .dashboard-container {
+    main {
+        padding-inline: 2rem;
+    }
+
+    .grid-item {
+        gap: 1.5rem;
+    }
+
+    .graph-container {
         max-height: 20rem;
+    }
+
+    .grid-item-large > .graph-container {
+        height: 20rem;
+    }
+
+    .graph-description {
+        line-height: 2.5rem;
     }
 }
 
 @media (max-width: 285px) {
-    /* || MAIN */
     main {
         padding: 0 1rem 3rem;
     }

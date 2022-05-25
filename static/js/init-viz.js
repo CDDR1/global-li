@@ -1,6 +1,6 @@
 const fetchData = async () => {
     const res = await fetch('http://api-li.computertechclub.com/api/Pages/GetPageLinksByPageID?pageID=1');
-    const data = await res.json(); console.log(data);
+    const data = await res.json();
 
     data.forEach((graph, index) => {
         // Create new grid item to be insrted in the dashboard grid.
