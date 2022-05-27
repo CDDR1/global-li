@@ -23,6 +23,4 @@ def contact():
     return render_template('contact.html', title='Contact Us')
 
 if __name__ == '__main__':
-    app.run(debug=True)
-
-# export FLASK_DEBUG=1 to activate debug mode
+    app.run(debug=False)
