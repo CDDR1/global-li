@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../static/css/general-styles.css">
     <!-- Foreign Direct Investments Styles -->
     <link rel="stylesheet" href="../static/css/dashboards.css">
-    <title>Global LI | Foreign Direct Investments</title>
+    <title>Global LI | Exports</title>
     <!-- FAVICON -->
     <link rel="icon" type="image/x-icon" href="../static/img/favicon.png">
     <!-- Tableau JS API -->
@@ -28,34 +28,16 @@
         <!-- MAIN SECTION -->
         <main>
             <h1 class="page-title">Exports</h1>
-            <div class="dashboards-split">
-                <div class="left-dashboard">
-                    <h2 class="dashboard-title">Long Island Engagement</h2>
-                    <div class="dashboard-container small-dashboard">
-                        <div id="vizContainer1" style="width: 100%; height: 100%;"></div>
-                    </div>
-                    <p class="dashboard-description">Global LI works to evaluate the global competitiveness and
-                        international engagement of Long Island and to determine the region’s international engagement
-                        readiness, capability, and commitment.</p>
-                </div>
-                <div class="right-dashboard">
-                    <h2 class="dashboard-title">Long Island Engagement</h2>
-                    <div class="dashboard-container small-dashboard">
-                        <div id="vizContainer2" style="width: 100%; height: 100%"></div>
-                    </div>
-                    <p class="dashboard-description">Global LI works to evaluate the global competitiveness and
-                        international engagement of Long Island and to determine the region’s international engagement
-                        readiness, capability, and commitment.</p>
-                </div>
-            </div>
-            <div class="center-dashboard">
-                <h2 class="dashboard-title">Long Island Engagement</h2>
-                <div class="dashboard-container long-dashboard">
-                    <div id="vizContainer3" style="width: 100%; height: 100%;"></div>
-                </div>
-                <p class="dashboard-description">Global LI works to evaluate the global competitiveness and
-                    international engagement of Long Island and to determine the region’s international engagement
-                    readiness, capability, and commitment.</p>
+            <!-- GRID -->
+            <div class="dashboard-grid">
+                <!-- This is the structure of the HTML elements that will be created to 
+                add the graphs from the API -->
+
+                <!-- <div class="grid-item">
+                    <h2 class="graph-title">THE GRAPH TITLE WILL GO HERE</h2>
+                    <div class="graph-container">THIS <div> WILL CONTAIN THE GRAPH</div>
+                    <p class="graph-description">THE GRAPH DESCRIPTION GOES HERE</p>
+                </div> -->
             </div>
         </main>
 
@@ -68,7 +50,7 @@
     </div>
 
     <!-- JavaScript -->
-    <script src="../static/js/init-viz.js"></script>
+    <script src="../static/js/fetch-page-2.js"></script>
 </body>
 
 </html>
