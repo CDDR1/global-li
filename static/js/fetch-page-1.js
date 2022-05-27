@@ -1,5 +1,5 @@
 const fetchData = async () => {
-    const res = await fetch('http://api-li.computertechclub.com/api/Pages/GetPageLinksByPageID?pageID=1');
+    const res = await fetch('https://api-li.computertechclub.com/api/Pages/GetPageLinksByPageID?pageID=1');
     const data = await res.json();
 
     data.forEach((graph, index) => {
