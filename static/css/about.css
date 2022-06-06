@@ -115,8 +115,12 @@ main {
     line-height: 2.5rem;
 }
 
-.portfolio-site-link:hover {
+.portfolio-site-link {
     text-decoration: underline;
+}
+
+.portfolio-site-link:hover {
+    text-decoration: none;
 }
 
 .grid-item-2 {
